@@ -26,6 +26,8 @@ import style from '../../../../assets/scss/custom.module.scss';
 import './usermanagementtable.scss';
 import TableActionBtnGroup from '../tableactionbtngroup/TableActionBtnGroup';
 import {showToast} from '../../../../utils/GeneralUtils';
+import {CustomModal} from '../../../Modal/CustomModal.js'
+
 const UserManagementTable = () => {
     const columns = useMemo(() => COLUMNS, []);
     const [data, setData] = useState([]);
@@ -34,6 +36,11 @@ const UserManagementTable = () => {
     const [selectedRowIds, setSelectedRowIds] = useState(new Set());
     const history = useNavigate();
     const { baseUrl } = useBaseUrl();
+    const [isOpenModal, setIsOpenModal] = useState(false);
+    const logUserDetails = JSON.parse(localStorage.getItem('user'));
+
+
+    console.log('log user', logUserDetails);
 
     const loadUsers = useCallback(async () => {
         try {            
@@ -98,6 +105,8 @@ const UserManagementTable = () => {
             ]);
         }
     );
+
+    console.log('121212', page);
 
     const { globalFilter, pageIndex, pageSize } = state;
 
@@ -194,6 +203,7 @@ const UserManagementTable = () => {
     };
     
     const handleChangePasswordClick = () => {
+      setIsOpenModal(true);
         history('#');
     };
 
@@ -291,7 +301,7 @@ const UserManagementTable = () => {
                                             );
                                         })}
                                     <td>
-                                        <TableActionBtnGroup 
+                                        <TableActionBtnGroup
                                             loginUser={() => handleLoginUserClick()}
                                             viewUser={() => viewUser(row.original.id)}
                                             // editUrl={`/access/user/edit-user/${row.original.id}`}
@@ -343,6 +353,13 @@ const UserManagementTable = () => {
                     pageSize={pageSize}
                 />
             </div>
+            {
+              isOpenModal && 
+              <CustomModal 
+                show={isOpenModal}
+                onHide={() => setIsOpenModal(false)}
+              />
+            }
         </>
     );
 };

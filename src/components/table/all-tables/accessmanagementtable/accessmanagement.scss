@@ -1,0 +1,95 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.role-management-table{
+    thead{
+        tr{
+            th{
+                &:nth-last-child(1){
+                    text-align: right;
+                }
+            }
+        }
+    }
+    tr{
+        &:nth-child(even){
+            background-color: transparent !important;
+        }
+    }
+    .parentrow{
+        border-bottom: 1px solid $table-border-color;
+        &:nth-child(even){
+            background-color: transparent !important;
+        }
+        &:hover{
+            background-color: $tr-hover-color !important;
+        } 
+        th,td{
+            vertical-align: baseline;
+            span.expandbtn{
+                display: block;
+                line-height: 0;
+            }
+            &:nth-child(1){
+                width: 30px;
+                display: none;
+                @include respond-below(xxs){
+                    display: table-cell;
+                }
+            }
+            &:nth-child(3){
+                white-space: pre-line;
+            }
+            &:nth-child(5){
+                @include respond-below(xxs){
+                    display: none;
+                }
+            }
+            &:nth-child(4){
+                @include respond-below(xxxs){
+                    display: none;
+                }
+            }
+            &:nth-child(3){
+                @include respond-below(xxxxxxs){
+                    display: none;
+                }
+            }
+        }       
+    }
+    .childrow{
+        td{
+            span{
+                display: none;
+                &:nth-child(4){
+                    @include respond-below(xxs){
+                        display: block;
+                    }
+                }
+                &:nth-child(3){
+                    @include respond-below(xxxs){
+                        display: block;
+                    }
+                }
+                &:nth-child(2){
+                    @include respond-below(xxxxxxs){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .permissions_content{
+        color: $white-color;
+        padding: 2px 4px;
+        display: inline-block;
+        border-radius: 4px;
+        &.red{
+            background-color: $dark-red-color;
+        }
+        &.green{
+            background-color: $success-green-color;
+        }
+    }
+}

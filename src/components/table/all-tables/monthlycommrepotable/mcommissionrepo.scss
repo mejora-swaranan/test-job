@@ -1,0 +1,32 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.mcommission-table-wrap{
+    thead{
+        tr{
+            &:nth-child(1){
+                border-bottom: 1px solid $table-border-color;
+                th{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    tbody{
+        .parentrow{
+            &.childrows{
+                td{
+                    .bodycheckBox{
+                        display: none !important;
+                    }
+                    &:nth-last-child(1){
+                        ul{
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

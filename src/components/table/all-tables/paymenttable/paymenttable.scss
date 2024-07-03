@@ -1,0 +1,158 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: $primary-color;
+        color: $white-color;
+    }
+    td,th{
+        border: 1px solid $gray-shade-light-color;
+        padding: 8px;
+        @include font-14;
+        .checkbox{    
+            position: relative;
+            bottom: -3px;
+        }
+    }
+    tbody{
+        tr.parentrow{
+            border-bottom: 1px solid $primary-color;
+            &:nth-child(even){
+                background-color: $white-light-shade;
+            }
+            &:hover{
+                background-color: $gray-shade-light-color;
+            }
+        }  
+    }  
+    tfoot{
+        td{
+            background-color: transparent;
+            color: $black-color;
+        }
+    }
+}  
+
+
+.colexpand{    
+    background-color: $gray-shade-light-color;
+    td{
+        padding: 0;
+        border-top: 1px solid $primary-color;
+        span{
+            display: block;
+            text-align: left;
+            border-bottom: 1px solid $primary-color;
+            padding: 10px 10px;
+            &::before {
+                content: attr(data-label);
+                color: $primary-color;
+                font-weight: 600;
+                min-height: 40px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.allcustomtable{
+    td{
+        textarea{
+            height: 31px;
+            border: 1px solid $black-color;
+            background-color: transparent;
+        }
+    }
+}
+.filtersearch{
+    font-weight: 700;
+    @include font-16;
+    color: $sidebar-menu-color;
+    margin-left: 5px;
+    input{
+        height: 31px;
+        border: 1px solid $black-color;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+}
+.allcustomtable{
+    .parentrow{
+        &.childrows{
+            background-color: $child-row-color !important;
+        }
+    }
+}
+
+.paymenttable{
+    .parentrow{
+        th,td{
+            &:nth-child(6){
+                @include respond-below(xl){
+                    display: none;
+                }
+            }
+            &:nth-child(5){
+                @include respond-below(md){
+                    display: none;
+                }
+            }
+            &:nth-child(4){
+                @include respond-below(xxxxxss){
+                    display: none;
+                }
+            }
+        }
+    }
+    .childrow{
+        td{
+            span{
+                display: none;
+                &:nth-child(5){
+                    @include respond-below(xl){
+                        display: block;
+                    }
+                }
+                &:nth-child(4){
+                    @include respond-below(md){
+                        display: block;
+                    }
+                }
+                &:nth-child(3){
+                    @include respond-below(xxxxxss){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    tfoot{
+        tr{
+            td{
+                &:nth-child(4){
+                    @include respond-below(xl){
+                        display: none;
+                    }
+                }
+                &:nth-child(3){
+                    @include respond-below(md){
+                        display: none;
+                    }
+                }
+                &:nth-child(1){
+                    @include respond-below(xxxxxss){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

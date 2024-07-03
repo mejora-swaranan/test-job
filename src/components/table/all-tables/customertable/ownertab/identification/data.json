@@ -1,0 +1,42 @@
+{
+   "IDChecks": [
+      {
+         "overall": "0",
+         "biometrics": "1",
+         "tampering": "2"
+      },
+      {
+         "overall": "0",
+         "biometrics": "1",
+         "tampering": "2"
+      },
+      {
+         "overall": "0",
+         "biometrics": "1",
+         "tampering": "2"
+      }
+   ],
+   "IDVerification": [
+      {
+         "id": "0",
+         "name": "AA",
+         "address": "SSS",
+         "dob": "2",
+         "pep": "2"
+      },
+      {
+         "id": "1",
+         "name": "BB",
+         "address": "SSS",
+         "dob": "SSS",
+         "pep": "2"
+      },
+      {
+         "id": "2",
+         "name": "CC",
+         "address": "SSS",
+         "dob": "2",
+         "pep": "2"
+      }
+   ]
+}

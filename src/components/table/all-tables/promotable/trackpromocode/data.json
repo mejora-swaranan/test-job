@@ -1,0 +1,18 @@
+[
+   {
+      "existing_customer": "Seascape (2010) Limited",
+      "referred": "0",
+      "link_click": "2",
+      "sign_up": "0",
+      "submit_invoice": "0",
+      "funded_invoice": "0"
+   },
+   {
+      "existing_customer": "John Finance",
+      "referred": "0",
+      "link_click": "1",
+      "sign_up": "0",
+      "submit_invoice": "0",
+      "funded_invoice": "0"
+   }
+]

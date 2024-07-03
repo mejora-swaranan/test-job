@@ -1,0 +1,458 @@
+@import "var";
+
+
+
+/* Text styles */
+@mixin font-38-h1 {
+	font-size: 38px;
+	@include respond-above(xxxxxs) {
+		font-size: 38px;
+	}
+	@include respond-above(xsm) {
+		font-size: 55px;
+	}
+	@include respond-above(sm) {
+		font-size: 65px;
+	}	
+	@include respond-above(md) {
+		font-size: 72px;
+	}	
+	@include respond-above(lg) {
+		font-size: 84px;
+	}
+}
+
+@mixin font-110 {
+	font-size: 110px;
+	
+	@include respond-below(lg) {
+		font-size: 65px;
+	}
+	@include respond-below(md) {
+		font-size: 45px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 35px;
+	}
+}
+
+@mixin font-85 {
+	font-size: 85px;
+	
+	@include respond-below(lg) {
+		font-size: 65px;
+	}
+	@include respond-below(md) {
+		font-size: 45px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 35px;
+	}
+}
+
+@mixin font-74 {
+	font-size: 74px;
+	
+	@include respond-below(lg) {
+		font-size: 45px;
+	}
+	@include respond-below(md) {
+		font-size: 35px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 26px;
+	}
+}
+
+@mixin font-65 {
+	font-size: 65px;
+	
+	@include respond-below(lg) {
+		font-size: 45px;
+	}
+	@include respond-below(md) {
+		font-size: 35px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 26px;
+	}
+}
+
+@mixin font-60 {
+	font-size: 60px;
+	
+	@include respond-below(lg) {
+		font-size: 45px;
+	}
+	@include respond-below(md) {
+		font-size: 35px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 26px;
+	}
+}
+@mixin font-55 {
+	font-size: 55px;
+	
+	@include respond-below(lg) {
+		font-size: 45px;
+	}
+	@include respond-below(md) {
+		font-size: 35px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 26px;
+	}
+}
+@mixin font-50 {
+	font-size: 50px;
+	
+	@include respond-below(lg) {
+		font-size: 40px;
+	}
+	@include respond-below(md) {
+		font-size: 35px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 24px;
+	}
+}
+@mixin font-48 {
+	font-size: 48px;
+	
+	@include respond-below(lg) {
+		font-size: 40px;
+	}
+	@include respond-below(md) {
+		font-size: 35px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 24px;
+	}
+}
+@mixin font-45 {
+	font-size: 45px;
+	
+	@include respond-below(lg) {
+		font-size: 40px;
+	}
+	@include respond-below(md) {
+		font-size: 35px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 24px;
+	}
+}
+@mixin font-42 {
+	font-size: 42px;
+	
+	@include respond-below(lg) {
+		font-size: 38px;
+	}
+	@include respond-below(md) {
+		font-size: 28px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 20px;
+	}
+}
+@mixin font-40 {
+	font-size: 40px;
+	
+	@include respond-below(lg) {
+		font-size: 38px;
+	}
+	@include respond-below(md) {
+		font-size: 28px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 20px;
+	}
+}
+@mixin font-38 {
+	font-size: 38px;
+	
+	@include respond-below(md) {
+		font-size: 26px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 20px;
+	}
+}
+@mixin font-35 {
+	font-size: 35px;
+	
+	@include respond-below(md) {
+		font-size: 26px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 20px;
+	}
+}
+@mixin font-32 {
+	font-size: 32px;
+	
+	@include respond-below(md) {
+		font-size: 24px;
+	}
+	@include respond-below(xxs) {
+		font-size: 22px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 18px;
+	}
+}
+@mixin font-30 {
+	font-size: 30px;
+	
+	@include respond-below(md) {
+		font-size: 24px;
+	}
+	@include respond-below(xxs) {
+		font-size: 22px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 18px;
+	}
+}
+@mixin font-28 {
+	font-size: 28px;
+	
+	@include respond-below(md) {
+		font-size: 24px;
+	}
+	@include respond-below(xxs) {
+		font-size: 22px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 18px;
+	}
+}
+@mixin font-26 {
+	font-size: 26px;
+	
+	@include respond-below(md) {
+		font-size: 20px;
+	}
+	@include respond-below(xxs) {
+		font-size: 20px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 16px;
+	}
+}
+@mixin font-25 {
+	font-size: 25px;
+	
+	@include respond-below(md) {
+		font-size: 20px;
+	}
+	@include respond-below(xxs) {
+		font-size: 16px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 14px;
+	}
+}
+@mixin font-24 {
+	font-size: 24px;
+	
+	@include respond-below(lg) {
+		font-size: 20px;
+	}
+	@include respond-below(md) {
+		font-size: 16px;
+	}
+	@include respond-below(xxs) {
+		font-size: 16px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 14px;
+	}
+}
+
+@mixin font-23 {
+	font-size: 23px;
+	
+	@include respond-below(md) {
+		font-size: 20px;
+	}
+	@include respond-below(xxs) {
+		font-size: 16px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 14px;
+	}
+}
+
+@mixin font-22 {
+	font-size: 22px;
+	
+	@include respond-below(lg) {
+		font-size: 18px;
+	}
+	@include respond-below(md) {
+		font-size: 16px;
+	}
+	@include respond-below(xxs) {
+		font-size: 16px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 14px;
+	}
+}
+@mixin font-21 {
+	font-size: 21px;
+	
+	@include respond-below(lg) {
+		font-size: 18px;
+	}
+	@include respond-below(md) {
+		font-size: 16px;
+	}
+	@include respond-below(xxs) {
+		font-size: 16px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 14px;
+	}
+}
+@mixin font-20 {
+	font-size: 20px;
+	
+	@include respond-below(lg) {
+		font-size: 18px;
+	}
+	@include respond-below(md) {
+		font-size: 16px;
+	}
+	@include respond-below(xxs) {
+		font-size: 16px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 14px;
+	}
+}
+@mixin font-19 {
+	font-size: 19px;
+	
+	@include respond-below(lg) {
+		font-size: 18px;
+	}
+	@include respond-below(md) {
+		font-size: 16px;
+	}
+	@include respond-below(xxs) {
+		font-size: 16px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 14px;
+	}
+}
+@mixin font-20 {
+	font-size: 20px;
+	
+	@include respond-below(lg) {
+		font-size: 18px;
+	}
+	@include respond-below(md) {
+		font-size: 16px;
+	}
+	@include respond-below(xxs) {
+		font-size: 16px;
+	}
+	@include respond-below(md) {
+		font-size: 16px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 14px;
+	}
+}
+@mixin font-18 {
+	font-size: 18px;
+	
+	@include respond-below(md) {
+		font-size: 16px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 14px;
+	}
+}
+@mixin font-16 {
+	font-size: 16px;
+	
+	@include respond-below(xsm) {
+		font-size: 14px;
+	}
+}
+@mixin font-15 {
+	font-size: 15px;
+	
+	@include respond-below(xs) {
+		font-size: 14px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 13px;
+	}
+}
+@mixin font-14 {
+	font-size: 14px;
+	
+	@include respond-below(xxxs) {
+		font-size: 13px;
+	}
+}
+@mixin font-13 {
+	font-size: 13px;
+	
+	@include respond-below(xxxs) {
+		font-size: 12px;
+	}
+}
+@mixin font-12 {
+	font-size: 12px;
+	
+	@include respond-below(xxxs) {
+		font-size: 12px;
+	}
+}
+
+
+@mixin font-30-heading {
+	font-size: 30px;
+	@include respond-above(sm) {
+		font-size: 40px;
+	}	
+	@include respond-above(md) {
+		font-size: 45px;
+	}	
+}
+
+@mixin font-28-strong {
+	font-size: 25px;
+	@include respond-above(xxxxxxs){
+		font-size: 20px;
+	}
+	@include respond-above(xsm){
+		font-size: 20px;
+	}
+	@include respond-above(smxx){
+		font-size: 24px;
+	}
+	@include respond-above(sm){
+		font-size: 28px;
+	}
+}
+
+@mixin font-14-h5 {
+	font-size: 14px;
+	@include respond-above(xxxxxs) {
+		font-size: 14px;
+	}
+	@include respond-above(sm) {
+		font-size: 16px;
+	}	
+	@include respond-above(md) {
+		font-size: 18px;
+	}	
+}

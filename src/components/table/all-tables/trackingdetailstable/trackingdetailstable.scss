@@ -1,0 +1,37 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.trackingtable{
+    .parentrow{
+        th,td{
+            &:nth-child(3){
+                @include respond-below(xxs){
+                    display: none;
+                }
+            }
+            &:nth-child(2){
+                @include respond-below(xxxxs){
+                    display: none;
+                }
+            }
+        }
+    }
+    .childrow{
+        td{
+            span{
+                display: none;
+                &:nth-child(2){
+                    @include respond-below(xxs){
+                        display: block;
+                    }
+                }
+                &:nth-child(1){
+                    @include respond-below(xxxxs){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,491 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.pricing_accirdian {
+   &.custom-accordion {
+      .accordion-item {
+         @include respond-below(xs) {
+            .accordion-header {
+               button {
+                  text-align: left;
+               }
+            }
+         }
+         .relative {
+            a {
+               @include respond-below(xs) {
+                  right: 10%;
+                  font-size: 10px;
+                  padding-block: 2px;
+               }
+               @include respond-below(xxxxs) {
+                  right: 15%;
+               }
+            }
+         }
+      }
+   }
+}
+.pricingplantable {
+   .parentrow {
+      border-bottom: 1px solid $table-border-color !important;
+      th,
+      td {
+         &:nth-child(1) {
+            @include respond-above(xxl) {
+               display: none;
+            }
+         }
+
+         &:nth-child(7) {
+            @include respond-below(sm) {
+               display: none;
+            }
+         }
+
+         &:nth-child(5) {
+            @include respond-below(smmm) {
+               display: none;
+            }
+         }
+         &:nth-child(4) {
+            @include respond-below(xxs) {
+               display: none;
+            }
+         }
+         &:nth-child(3) {
+            @include respond-below(xxxs) {
+               display: none;
+            }
+         }
+      }
+   }
+
+   .childrow {
+      td {
+         span {
+            display: none;
+            &:nth-child(8),
+            &:nth-child(7) {
+               @include respond-below(xxl) {
+                  display: block;
+               }
+            }
+            &:nth-child(6) {
+               @include respond-below(lg) {
+                  display: block;
+               }
+            }
+            &:nth-child(5) {
+               @include respond-below(md) {
+                  display: block;
+               }
+            }
+            &:nth-child(4) {
+               @include respond-below(smmm) {
+                  display: block;
+               }
+            }
+            &:nth-child(3) {
+               @include respond-below(xxs) {
+                  display: block;
+               }
+            }
+            &:nth-child(2) {
+               @include respond-below(xxxs) {
+                  display: block;
+               }
+            }
+         }
+      }
+   }
+
+   &.standardtable {
+      .parentrow {
+         th,
+         td {
+            &:nth-child(6) {
+               @include respond-below(smmm) {
+                  display: none;
+               }
+            }
+         }
+      }
+      .childrow {
+         td {
+            span {
+               &:nth-child(5) {
+                  @include respond-below(md) {
+                     display: none;
+                  }
+                  @include respond-below(smmm) {
+                     display: block;
+                  }
+               }
+            }
+         }
+      }
+      &.banner_notification {
+         .parentrow {
+            th,
+            td {
+               &:nth-child(1) {
+                  @include respond-above(sm) {
+                     display: none;
+                  }
+               }
+               &:nth-child(3) {
+                  @include respond-below(xxxs) {
+                     display: block;
+                  }
+               }
+               &:nth-child(4) {
+                  @include respond-below(xxs) {
+                     display: block;
+                  }
+                  @include respond-below(xxxs) {
+                     display: none;
+                  }
+               }
+               &:nth-child(5) {
+                  @include respond-below(sm) {
+                     display: block;
+                  }
+                  @include respond-below(xxs) {
+                     display: none;
+                  }
+               }
+               &:nth-child(8) {
+                  @include respond-below(sm) {
+                     display: none;
+                  }
+               }
+            }
+         }
+         .childrow {
+            td {
+               span {
+                  &:nth-child(2) {
+                     @include respond-below(xxxs) {
+                        display: none;
+                     }
+                  }
+                  &:nth-child(3) {
+                     @include respond-below(xxs) {
+                        display: none;
+                     }
+                     @include respond-below(xxxs) {
+                        display: block;
+                     }
+                  }
+                  &:nth-child(4) {
+                     @include respond-below(sm) {
+                        display: none;
+                     }
+                     @include respond-below(xxs) {
+                        display: block;
+                     }
+                  }
+                  &:nth-child(7) {
+                     @include respond-below(xxl) {
+                        display: none;
+                     }
+                     @include respond-below(sm) {
+                        display: block;
+                     }
+                  }
+                  &:nth-child(6) {
+                     @include respond-below(xl) {
+                        display: none;
+                     }
+                     @include respond-below(sm) {
+                        display: block;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   &.bulkchangetable {
+      .parentrow {
+         td,
+         th {
+            &:nth-child(3) {
+               @include respond-below(xxxs) {
+                  display: block;
+               }
+            }
+            &:nth-child(4) {
+               @include respond-below(xxs) {
+                  display: block;
+               }
+               @include respond-below(xxxs) {
+                  display: none;
+               }
+            }
+            &:nth-child(6) {
+               @include respond-below(xxs) {
+                  display: none;
+               }
+            }
+            &:nth-child(5) {
+               @include respond-below(smmm) {
+                  display: block;
+               }
+               @include respond-below(xxs) {
+                  display: none;
+               }
+            }
+            &:nth-child(7) {
+               @include respond-below(sm) {
+                  display: block;
+               }
+               @include respond-below(smmm) {
+                  display: none;
+               }
+            }
+            &:nth-child(8) {
+               @include respond-below(xxl) {
+                  display: block;
+               }
+               @include respond-below(sm) {
+                  display: none;
+               }
+            }
+            &:nth-child(9),
+            &:nth-child(10),
+            &:nth-child(11),
+            &:nth-child(12),
+            &:last-child {
+               @include respond-below(xxl) {
+                  display: none;
+               }
+            }
+         }
+      }
+      .childrow {
+         td {
+            span {
+               &:nth-child(4) {
+                  @include respond-below(smmm) {
+                     display: none;
+                  }
+                  @include respond-below(xxs) {
+                     display: block;
+                  }
+               }
+               &:nth-child(5) {
+                  @include respond-below(xxl) {
+                     display: none;
+                  }
+                  @include respond-below(smmm) {
+                     display: block;
+                  }
+               }
+               &:nth-child(6) {
+                  @include respond-below(xxl) {
+                     display: none;
+                  }
+                  @include respond-below(sm) {
+                     display: block;
+                  }
+               }
+               &:nth-child(9),
+               &:nth-child(10),
+               &:nth-child(11),
+               &:nth-child(12),
+               &:last-child {
+                  @include respond-below(xxl) {
+                     display: block;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   &.riskbased {
+      .parentrow {
+         th,
+         td {
+            &:nth-child(6) {
+               @include respond-below(smmm) {
+                  display: none;
+               }
+            }
+            &:nth-child(8),
+            &:nth-child(9) {
+               @include respond-below(xxl) {
+                  display: none;
+               }
+            }
+            &:nth-child(7) {
+               @include respond-below(md) {
+                  display: block;
+               }
+               @include respond-below(mmd) {
+                  display: none;
+               }
+            }
+            &:nth-child(8) {
+               @include respond-below(md) {
+                  display: none;
+               }
+            }
+         }
+      }
+
+      .childrow {
+         td {
+            span {
+               &:nth-child(6) {
+                  @include respond-below(lg) {
+                     display: none;
+                  }
+                  @include respond-below(mmd) {
+                     display: block;
+                  }
+               }
+               &:nth-child(5) {
+                  @include respond-below(md) {
+                     display: none;
+                  }
+
+                  @include respond-below(smmm) {
+                     display: block;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   &.promocodetable {
+      .parentrow {
+         th,
+         td {
+            &:nth-child(3) {
+               @include respond-below(xxxs) {
+                  display: block;
+               }
+            }
+            &:nth-child(10) {
+               @include respond-below(xxl) {
+                  display: none;
+               }
+            }
+         }
+      }
+
+      .childrow {
+         td {
+            span {
+               &:nth-child(9) {
+                  @include respond-below(xxl) {
+                     display: block;
+                  }
+               }
+               &:nth-child(2) {
+                  @include respond-below(xxxs) {
+                     display: none;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   &.emailtemplatetable {
+      .parentrow {
+         th,
+         td {
+            &:nth-child(1) {
+               @include respond-above(smmm) {
+                  display: none;
+               }
+            }
+            &:nth-child(4) {
+               @include respond-below(smmm) {
+                  display: none;
+               }
+            }
+            &:nth-child(5) {
+               display: block;
+            }
+         }
+      }
+
+      .childrow {
+         td {
+            span {
+               &:nth-child(3) {
+                  @include respond-below(smmm) {
+                     display: block;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   &.customer_property {
+      .parentrow {
+         th,
+         td {
+            &:nth-child(6) {
+               @include respond-below(lg) {
+                  display: none;
+               }
+            }
+            &:nth-child(7) {
+               @include respond-below(lg) {
+                  display: none;
+               }
+            }
+            &:first-child {
+               @include respond-above(lg) {
+                  display: none;
+               }
+            }
+            &:last-child {
+               @include respond-below(xxl) {
+                  display: block;
+               }
+            }
+         }
+      }
+   }
+
+   &.customer_idcheck {
+      .parentrow {
+         th,
+         td {
+            &:first-child {
+               @include respond-above(xxs) {
+                  display: none;
+               }
+            }
+            &:last-child {
+               @include respond-below(xxl) {
+                  display: block;
+               }
+            }
+         }
+      }
+
+      .childrow {
+         td {
+            span {
+               &:nth-child(3) {
+                  // @include respond-below(smmm) {
+                  //    display: block;
+                  // }
+               }
+            }
+         }
+      }
+   }
+}

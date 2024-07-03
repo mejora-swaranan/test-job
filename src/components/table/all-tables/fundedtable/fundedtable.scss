@@ -1,0 +1,176 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.funded-search{
+    @include respond-below(xxs){
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    >span{
+        @include respond-below(xxs){
+            margin-bottom: 15px;
+        }
+        input{
+            border: 1px solid $primary-color;
+            border-radius: 0;
+        }
+    }
+}
+.fundedtable{
+    tr{
+        &:nth-child(even){
+            background-color: transparent !important;
+            &:hover{
+                background-color: $tr-hover-color !important;
+            }
+        }
+    }
+    .parentrow{
+        border-bottom: 1px solid $table-border-color;
+        &:nth-last-child(1){
+            border-bottom: 1px solid $primary-color;
+        }
+        &:hover{
+            background-color: $tr-hover-color;
+        }
+        th,td{
+            &:nth-child(11),&:nth-child(10){
+                @include respond-below(lg){
+                    display: none;
+                }
+            }
+            &:nth-child(9){
+                @include respond-below(md){
+                    display: none;
+                }
+            }
+            &:nth-child(8){
+                @include respond-below(smmm){
+                    display: none;
+                }
+            }
+            &:nth-child(7){
+                @include respond-below(smx){
+                    display: none;
+                }
+            }
+            &:nth-child(6),&:nth-child(5){
+                @include respond-below(xsm){
+                    display: none;
+                }
+            }
+            &:nth-child(4){
+                @include respond-below(xxs){
+                    display: none;
+                }
+            }
+            &:nth-child(12){
+                @include respond-below(xxxs){
+                    display: none;
+                }
+            }
+        }
+    }
+    .childrow{
+        td{
+            span{
+                display: none;
+                &:nth-child(10),&:nth-child(9){
+                    @include respond-below(lg){
+                        display: block;
+                    }
+                }
+                &:nth-child(8){
+                    @include respond-below(md){
+                        display: block;
+                    }
+                }
+                &:nth-child(7){
+                    @include respond-below(smmm){
+                        display: block;
+                    }
+                }
+                &:nth-child(6){
+                    @include respond-below(smx){
+                        display: block;
+                    }
+                }
+                &:nth-child(5),&:nth-child(4){
+                    @include respond-below(xsm){
+                        display: block;
+                    }
+                }
+                &:nth-child(3){
+                    @include respond-below(xxs){
+                        display: block;
+                    }
+                }
+                &:nth-child(11){
+                    @include respond-below(xxxs){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.funded-bill{
+    span{
+        @include secondary-medium-font;
+    }
+    h1,h2,h3,h4,h5,h6{
+        color: $gray-color;
+        @include secondary-medium-font;
+        @include font-18;
+        margin-bottom: 10px;
+        letter-spacing: 0;
+    }
+    .msg-wrap{
+        margin-top: 20px;
+        small{
+            font-size: 12px;
+        }
+        strong{
+            @include font-18;
+            color: $gray-color;
+        }
+    }
+}
+
+
+.funded-data-filter-tab{
+    ul.funded-nav{
+        border: 0;
+        li{
+            button, a{
+                border: 1px solid transparent !important;
+                background-color: transparent;
+                color: $gray-color;
+                @include secondary-medium-font;
+                border-radius: 0 !important;
+                cursor: pointer;
+                @include font-18;
+                &:hover{
+                    border: 1px solid transparent !important;
+                    background-color: transparent;
+                    color: $gray-color;
+                }
+                &.active{
+                    background-color: $primary-color !important;
+                    border: 1px solid $primary-color !important;
+                    color: $white-color !important;
+                }
+            }
+        }
+    }
+
+    
+    .new-pay-date {
+        max-width: 130px;
+        width: 100%;
+        margin-top: 5px;
+    }
+}

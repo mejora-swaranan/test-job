@@ -1,0 +1,38 @@
+@import "./../../assets/scss/var";
+@import "./../../assets/scss/media-query";
+@import "./../../assets/scss/font-mixins";
+/* ============================================================== */
+.commonCustomtable{
+    width: 100%;
+    p{
+        margin-bottom: 0px;
+    }
+    thead{
+        tr{
+            th{
+                color: $primary-color;
+                border-bottom: 1px solid $primary-color;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                border-bottom: 1px solid $primary-color;
+            }
+        }
+    }
+    tfoot{
+        tr{
+            td{
+                border-bottom: 1px solid transparent;
+            }
+        }
+    }
+    tr{
+        td{
+            vertical-align: middle;
+        }
+    }    
+}
+

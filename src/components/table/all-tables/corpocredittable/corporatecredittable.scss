@@ -1,0 +1,73 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.corporate-credit-table-wrap{
+    .parentrow{
+        th,td{
+            &:nth-child(1){
+                @include respond-above(xl){
+                    display: none;
+                }
+            }
+            &:nth-child(6){
+                @include respond-below(xl){
+                    display: none;
+                }
+            }
+            &:nth-child(5){
+                @include respond-below(md){
+                    display: none;
+                }
+            }
+            &:nth-child(4){
+                @include respond-below(xxxxxss){
+                    display: none;
+                }
+            }
+        }
+    }
+    .childrow{
+        td{
+            span{
+                display: none;
+                &:nth-child(5){
+                    @include respond-below(xl){
+                        display: block;
+                    }
+                }
+                &:nth-child(4){
+                    @include respond-below(md){
+                        display: block;
+                    }
+                }
+                &:nth-child(3){
+                    @include respond-below(xxxxxss){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    tfoot{
+        tr{
+            td{
+                &:nth-child(1){
+                    @include respond-above(xl){
+                        display: none;
+                    }
+                }
+                &:nth-child(3){
+                    @include respond-below(md){
+                        display: none;
+                    }
+                }
+                &:nth-child(1){
+                    @include respond-below(xxxxxss){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

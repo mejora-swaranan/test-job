@@ -1,0 +1,69 @@
+@import "./../../../assets/scss/var";
+@import "./../../../assets/scss/media-query";
+@import "./../../../assets/scss/font-mixins";
+/* ============================================================== */
+.checklist-table{
+    &.no-border{
+        tr{
+            td{
+                border-bottom: 0px;
+                border-color: transparent;
+            }
+        }
+    }
+    thead{
+        background-color: $white-light-shade;
+        border-top: 1px solid $table-border-color;
+        border-bottom: 1px solid $table-border-color;
+        tr{
+            td{
+                background-color: transparent;
+                color: $primary-color;
+                font-weight: 600;
+                padding: 12px 8px;
+            }
+        }
+    }
+}
+.addquestions-wrap{
+    color: $primary-color;
+    strong{
+        color: $secondary-color;
+    }
+}
+.question-wrap-area{
+    margin-top: 10px;
+    label{
+        @include secondary-bold-font;
+        display: block;
+    }
+    textarea{
+        height: 31px;
+        border: 1px solid $primary-color;
+        width: 100%;
+    }
+}
+.addquestion{
+    button{
+        border-radius: 5px !important;
+        padding: 2px 10px;
+    }
+}
+.seclect-question-wrap {
+    ul{
+        li{
+            list-style: none;
+            padding: 4px 0;
+            .added-question-wrap{
+                @include respond-below(xxxxms){
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+            .sales-question-list-dynamic{
+                width: 100%;
+                border: 1px solid $primary-color;
+            }
+        }
+    }
+}

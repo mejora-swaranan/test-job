@@ -1,0 +1,11 @@
+[
+   {
+      "id": "1",
+      "message": "Tell A Friend about test, a ...",
+      "permissible_age": "60 days",
+      "recurring_fire": "3 times",
+      "next_fire": "365 days",
+      "status": "Active",
+      "created_at": "2022-03-30"
+   }
+]

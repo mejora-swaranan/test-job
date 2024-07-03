@@ -1,0 +1,127 @@
+@import "var";
+@import "media-query";
+@import "font-mixins";
+/* ============================================================== */
+.step-btn-group{
+    @include respond-below(xxxxxxs){
+        display: block !important;
+        flex-wrap: wrap;     
+        width: 100%;   
+    }
+    button{
+        @include secondary-bold-font;
+        @include font-30;
+        padding: 10px 45px;
+        @include respond-below(xxxxxxs){
+            max-width: 100%;
+            width: 100%;
+            text-align: center;     
+        }
+    }
+}
+
+.step-page-wrap{
+    .steplist-wrap{
+        max-width: 950px;
+        width: 100%;
+        margin: 20px auto 40px;
+        display: flex;
+        li{
+            max-width: 20%;
+            width: 100%;
+            list-style: none;
+            @include secondary-medium-font;
+            @include font-14;
+            position: relative;
+            &::after{
+                content: "";
+                display: block;
+                height: 2px;
+                position: absolute;
+                width: 100%;
+                left: 50%;
+                top: 55px;
+                background-color: $gray-light-color;
+                @include respond-below(xsm){
+                    top: 45px;
+                }
+                @include respond-below(xxxxs){
+                    top: 40px;
+                }
+            }
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+            .steplist-content{
+                margin: 0 0.5em 0.5em;
+                padding: 1em 1em;
+                border-radius: 5px;
+                display: block;
+                color: $gray-light-color;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                @include respond-below(xxxxs){
+                    padding: 1em 0em;
+                    margin: 0 0.2em 0.5em;
+                }
+                span.icon{
+                    @include font-30;
+                    background: $white-color;
+                    position: relative;
+                    z-index: 1;
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    text-align: center;
+                    margin: 0 auto 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 2px solid $gray-light-color;
+                    @include respond-below(xsm){
+                        width: 60px;
+                        height: 60px;
+                        margin: 0px auto;
+                    }
+                    @include respond-below(xxxxs){
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                span.list-title{
+                    @include respond-below(xsm){
+                        display: none;
+                    }
+                }
+            }
+            &.done{
+                .steplist-content{
+                    color: $primary-color;
+                    span.icon{
+                        border: 2px solid $primary-color;
+                    }
+                }
+                &::after{
+                    background-color: $primary-color;
+                }
+            }
+            &.active{
+                .steplist-content{
+                    background: $primary-color !important;
+                    color: $white-color;
+                    @include respond-below(xxxxs){
+                        background: transparent !important;
+                    }
+                    span.icon{
+                        color: $primary-color;
+                        border: 2px solid $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

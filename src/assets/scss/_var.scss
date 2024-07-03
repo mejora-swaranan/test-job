@@ -1,0 +1,131 @@
+// For font variable
+$primary-font: "GothamBook", sans-serif;
+$primary-medium-font: "GothamMedium", sans-serif;
+$primary-bold-font: "GothamBold", sans-serif;
+$secondary-font: "Conv_HVD_Fonts_PlutoCondRegular", sans-serif;
+$secondary-medium-font: "Conv_HVD_Fonts_PlutoMedium", sans-serif;
+$secondary-bold-font: "Conv_Pluto Cond Bold", sans-serif;
+$secondary-extra-bold-font: "Conv_HVD_Fonts_PlutoCondBlack", sans-serif;
+$web-primary-font: "Manrope", sans-serif;
+$web-secondary-font: "Palanquin Dark", sans-serif;
+// For color pallete
+$text-color: #333;
+$text-bold-color: #212529;
+
+$white-color: #fff;
+$white-light-shade: #f2f2f2;
+$black-color: #000;
+
+$gray-color: #666;
+$gray-light-color: #7d7d7d;
+$gray-shade-light-color: #ddd;
+
+$light-white-color: #f5f5f5;
+$off-white-color: #e8e8e8;
+$sidebar-color: #f4f5f7;
+$sidebar-menu-color: #040707;
+$underline-color: #a1a2a2;
+$dashborad-tab-color: #ecf0f5;
+$dashborad-tab-border-color: #c3c5c9;
+
+$tr-hover-color: #f6f6f6;
+
+$primary-color: #14bc96;
+$secondary-color: #040707;
+$blue-color: #3c8dbc;
+$blue-color-hover: #2b739c;
+$table-link-color: #6060d8;
+
+$border-color: #15caa3;
+$label-color: #18b99b;
+$red-color: #ff0000;
+$dark-red-color: #dc3545;
+$dark-red-color-hover: #c02030;
+$danger-alert-border-color: #ebccd1;
+$danger-alert-color: #f2dede;
+$danger-alert-text-color: #a94442;
+
+$select-color: #575757;
+$search-border-color: #7d7e80;
+
+$title-bg-color: #808080;
+$table-border-color: #dee2e6;
+$input-border-color: #cccccc;
+$input-bg-color: #eeeeee;
+
+$default-link-color: #007bff;
+
+$footer-copy-color: #939598;
+
+$child-row-color: #f0f8ff;
+
+$sticky-color: #f7f7ff;
+$dark-green-color: #20493c;
+$green-color: #26b89a;
+$light-gray-color: #f6f6f6;
+$news-heading: #191d23;
+$placeholder-color: #64748b;
+$text-dark-color: #274a34;
+$yellow-color: #ffeacd;
+$success-green-color: #008000;
+$green-praimary-color: #00a65a;
+
+$td-gray-color: #d4d2d2;
+$td-yellow-color: #fff1dd;
+$td-red-color: #ffe7e7;
+
+$td-wraning-color: #ffe69c;
+$td-success-color: #a3cfbb;
+$td-danger-color: #f1aeb5;
+
+// for font weight
+@mixin primary-font() {
+   font-family: $primary-font;
+   font-weight: 400;
+}
+@mixin primary-medium-font() {
+   font-family: $primary-medium-font;
+   font-weight: 600;
+}
+@mixin primary-bold-font() {
+   font-family: $primary-bold-font;
+   font-weight: 700;
+}
+@mixin secondary-font() {
+   font-family: $secondary-font;
+}
+@mixin secondary-medium-font() {
+   font-family: $secondary-medium-font;
+}
+@mixin secondary-bold-font() {
+   font-family: $secondary-bold-font;
+}
+@mixin secondary-extra-bold-font() {
+   font-family: $secondary-bold-font;
+}
+
+// for web font
+@mixin web-primary-font() {
+   font-family: $web-primary-font;
+   font-weight: 400;
+}
+@mixin web-primary-medium-font() {
+   font-family: $web-primary-font;
+   font-weight: 600;
+}
+@mixin web-primary-bold-font() {
+   font-family: $web-primary-font;
+   font-weight: 700;
+}
+@mixin web-secondary-font() {
+   font-family: $web-secondary-font;
+   font-weight: 400;
+}
+@mixin web-secondary-medium-font() {
+   font-family: $web-secondary-font;
+   font-weight: 600;
+}
+@mixin web-secondary-bold-font() {
+   font-family: $web-secondary-font;
+   font-weight: 700;
+}

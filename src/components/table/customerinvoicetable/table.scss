@@ -1,0 +1,243 @@
+@import "./../../../assets/scss/var";
+@import "./../../../assets/scss/media-query";
+@import "./../../../assets/scss/font-mixins";
+/* ============================================================== */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    td,th{
+        border: 1px solid $gray-shade-light-color;
+        padding: 8px;
+        @include font-14;
+    }
+    tbody{
+        tr.parentrow{
+            &:nth-child(even){
+                background-color: $white-light-shade;
+            }
+            &:hover{
+                background-color: $gray-shade-light-color;
+            }
+        }  
+    }  
+}  
+  
+table th, tfoot td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: $primary-color;
+    color: $white-color;
+}
+
+// for invoice dashboard
+.invoice-dashboard{
+    tbody{
+        tr{
+            &.parentrow{
+                border-bottom: 1px solid $table-border-color !important;
+                &:hover{
+                    background-color: transparent !important;
+                }
+                &:nth-child(even){
+                    background-color: transparent !important;
+                    &:hover{
+                        background-color: transparent !important;
+                    }
+                }
+                &.childrows{
+                    background-color: transparent !important;
+                }
+            }
+            border-bottom: 1px solid $table-border-color !important;
+            td{
+                a{
+                    background-color: transparent !important;
+                    &:hover{
+                        background-color: transparent !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.td-gray-bg{
+    background-color: $td-gray-color;
+}
+.td-yellow-bg{
+    background-color: $td-yellow-color;
+}
+.td-red-bg{
+    background-color: $td-red-color;
+}
+.td-denger-bg{
+    background-color: $red-color;
+}
+
+.colexpand{    
+    background-color: $gray-shade-light-color;
+    td{
+        padding: 0;
+        border-top: 1px solid $primary-color;
+        span{
+            display: block;
+            text-align: left;
+            border-bottom: 1px solid $primary-color;
+            padding: 10px 10px;
+            &::before {
+                content: attr(data-label);
+                color: $primary-color;
+                font-weight: 600;
+                min-height: 40px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.allcustomtable{
+    td{
+        textarea{
+            height: 31px;
+            border: 1px solid $black-color;
+            background-color: transparent;
+        }
+    }
+}
+.filtersearch{
+    font-weight: 700;
+    @include font-16;
+    color: $sidebar-menu-color;
+    margin-left: 5px;
+    input{
+        height: 31px;
+        border: 1px solid $black-color;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+}
+
+.customerdatatable{
+    .parentrow{
+        th,td{
+            &:nth-child(19){
+                display: none;
+            }
+            &:nth-child(17),&:nth-child(16){
+                @include respond-below(xxl){
+                    display: none;
+                }
+            }
+            &:nth-child(15){
+                @include respond-below(lg){
+                    display: none;
+                }
+            }
+            &:nth-child(14),&:nth-child(13){
+                @include respond-below(lmd){
+                    display: none;
+                }
+            }
+            &:nth-child(12){
+                @include respond-below(mmd){
+                    display: none;
+                }
+            }
+            &:nth-child(11),&:nth-child(10){
+                @include respond-below(smxx){
+                    display: none;
+                }
+            }
+            &:nth-child(9),&:nth-child(8){
+                @include respond-below(xs){
+                    display: none;
+                }
+            }
+            &:nth-child(6),&:nth-child(7){
+                @include respond-below(xxss){
+                    display: none;
+                }
+            }
+            &:nth-child(5),&:nth-child(4){
+                @include respond-below(xxxxxss){
+                    display: none;
+                }
+            }
+        }
+    }
+    .colexpand{
+        td{
+            span{
+                display: none;
+                &:nth-child(17){
+                    display: block;
+                }
+                &:nth-child(16),&:nth-child(15){
+                    @include respond-below(xxl){
+                        display: block;
+                    }
+                }
+                &:nth-child(14){
+                    @include respond-below(lg){
+                        display: block;
+                    }
+                }
+                &:nth-child(13),&:nth-child(12){
+                    @include respond-below(lmd){
+                        display: block;
+                    }
+                }
+                &:nth-child(11){
+                    @include respond-below(mmd){
+                        display: block;
+                    }
+                }
+                &:nth-child(10),&:nth-child(9){
+                    @include respond-below(smxx){
+                        display: block;
+                    }
+                }
+                &:nth-child(8),&:nth-child(7){
+                    @include respond-below(xs){
+                        display: block;
+                    }
+                }
+                &:nth-child(6),&:nth-child(5){
+                    @include respond-below(xxss){
+                        display: block;
+                    }
+                }
+                &:nth-child(4),&:nth-child(3){
+                    @include respond-below(xxxxxss){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.all-inv-table{
+    tr{
+        th,td{
+            &:nth-child(2){
+                display: none !important;
+            }
+        }
+    }
+}
+
+.tab-btn-filter{
+    ul.tab-action{
+        li{
+            button.active{
+                background-color: $secondary-color !important;
+                border: 1px solid $secondary-color !important;
+                border-bottom: 1px solid $secondary-color !important;
+                color: $white-color !important;
+            }
+        }
+    }
+}

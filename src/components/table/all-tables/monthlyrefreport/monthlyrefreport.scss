@@ -1,0 +1,25 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.monthly-ref-payment-table{
+    max-width: 260px;
+    table-layout: fixed;
+    thead{
+        tr{
+            &:nth-child(2){
+                display: none;
+            }
+        }
+    }
+}
+
+.table-bg-even{
+    tr{
+        &.parentrow{
+            &:nth-child(even){
+                background-color: $input-bg-color !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+import { format } from "date-fns";
+
+export const COLUMNS = [
+   {
+      Header: "FT No.",
+      Footer: "FT No.",
+      accessor: "ft_no",
+   },
+   {
+      Header: "Status",
+      Footer: "Status",
+      accessor: "status",
+   },
+   {
+      Header: "Profit Predict",
+      Footer: "Profit Predict",
+      accessor: "profit_predict",
+   },
+   {
+      Header: "Overdue Predict",
+      Footer: "Overdue Predict",
+      accessor: "overdue_predict",
+   },
+   {
+      Header: "Ai Score",
+      Footer: "Ai Score",
+      accessor: "ai_score",
+   },
+   {
+      Header: "Inv. No.",
+      Footer: "Inv. No.",
+      accessor: "inv_no",
+   },
+   {
+      Header: "Date Funded",
+      Footer: "Date Funded",
+      accessor: "date_funded",
+      Cell: ({ value }) => {
+         if (value && !isNaN(new Date(value))) {
+            return format(new Date(value), "dd-MMM-yyyy");
+         } else {
+            return "N/A";
+         }
+      },
+   },
+   {
+      Header: "Repay Date",
+      Footer: "Repay Date",
+      accessor: "repay_date",
+      Cell: ({ value }) => {
+         if (value && !isNaN(new Date(value))) {
+            return format(new Date(value), "dd-MMM-yyyy");
+         } else {
+            return "";
+         }
+      },
+   },
+   {
+      Header: "Total Days",
+      Footer: "Total Days",
+      accessor: "total_days",
+   },
+   {
+      Header: "Debtor",
+      Footer: "Debtor",
+      accessor: "debtor",
+   },
+   {
+      Header: "Inv Amount",
+      Footer: "Inv Amount",
+      accessor: "inv_amount",
+   },
+   {
+      Header: "Funded",
+      Footer: "Funded",
+      accessor: "funded",
+   },
+   {
+      Header: "Alert",
+      Footer: "Alert",
+      accessor: "alert",
+   },
+   {
+      Header: "Comments",
+      Footer: "Comments",
+      accessor: "comments",
+      Cell: ({ value, row }) => {
+         const handleChange = (event) => {
+            row.original.comments = event.target.value;
+         };
+
+         return (
+            <textarea
+               value={value}
+               onChange={handleChange}
+               style={{ width: "100%" }}
+            />
+         );
+      },
+   },
+   {
+      Header: "Docs",
+      Footer: "Docs",
+      accessor: "docs",
+   },
+];

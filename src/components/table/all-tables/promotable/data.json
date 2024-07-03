@@ -1,0 +1,176 @@
+[
+   {
+      "id": "1",
+      "promo_code": "Promocode1",
+      "discount": "40%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending, Approved",
+      "apply_once_per_customer": "No",
+      "no_used": "4",
+      "total_discount": "$65.14",
+      "status": "Active"
+   },
+   {
+      "id": "2",
+      "promo_code": "FreeJan21",
+      "discount": "100%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending, Approved, Not Approved, Archived",
+      "apply_once_per_customer": "No",
+      "no_used": "7",
+      "total_discount": "$162.25",
+      "status": "Active"
+   },
+   {
+      "id": "3",
+      "promo_code": "TestPromo2",
+      "discount": "70%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending",
+      "apply_once_per_customer": "Yes",
+      "no_used": "1",
+      "total_discount": "$28.09",
+      "status": "Active"
+   },
+   {
+      "id": "4",
+      "promo_code": "TestPromocode1",
+      "discount": "61%",
+      "apply_discount_to": "Apply to all invoices",
+      "apply_to_customers": "Approved",
+      "apply_once_per_customer": "Yes",
+      "no_used": "2",
+      "total_discount": "$0.00",
+      "status": "Active"
+   },
+   {
+      "id": "5",
+      "promo_code": "AllPromo",
+      "discount": "15%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending, Approved, Not Approved, Archived",
+      "apply_once_per_customer": "Yes",
+      "no_used": "0",
+      "total_discount": "$0.00",
+      "status": "Active"
+   },
+   {
+      "id": "6",
+      "promo_code": "Promocode-12",
+      "discount": "$15.00",
+      "apply_discount_to": "Apply to highest value invoice",
+      "apply_to_customers": "Pending, Approved, Not Approved, Archived",
+      "apply_once_per_customer": "Yes",
+      "no_used": "2",
+      "total_discount": "$0.00",
+      "status": "Inactive"
+   },
+   {
+      "id": "7",
+      "promo_code": "TestPromFeb1",
+      "discount": "$20.00",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending",
+      "apply_once_per_customer": "No",
+      "no_used": "0",
+      "total_discount": "$0.00",
+      "status": "Active"
+   },
+   {
+      "id": "8",
+      "promo_code": "TestPromoFeb2",
+      "discount": "$2.00",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending",
+      "apply_once_per_customer": "Yes",
+      "no_used": "0",
+      "total_discount": "$0.00",
+      "status": "Active"
+   },
+   {
+      "id": "10",
+      "promo_code": "TestPromoCode35",
+      "discount": "10%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending",
+      "apply_once_per_customer": "Yes",
+      "no_used": "0",
+      "total_discount": "$0.00",
+      "status": "Active"
+   },
+   {
+      "id": "11",
+      "promo_code": "TestPromoCode36",
+      "discount": "10%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending",
+      "apply_once_per_customer": "Yes",
+      "no_used": "0",
+      "total_discount": "$0.00",
+      "status": "Active"
+   },
+   {
+      "id": "12",
+      "promo_code": "TestPromoCode37",
+      "discount": "10%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending",
+      "apply_once_per_customer": "Yes",
+      "no_used": "0",
+      "total_discount": "$0.00",
+      "status": "Active"
+   },
+   {
+      "id": "13",
+      "promo_code": "TestPromoCode38",
+      "discount": "10%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending",
+      "apply_once_per_customer": "Yes",
+      "no_used": "0",
+      "total_discount": "$0.00",
+      "status": "Active"
+   },
+   {
+      "id": "14",
+      "promo_code": "TestPromoCode40",
+      "discount": "$40.00",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending, Approved, Not Approved, Archived",
+      "apply_once_per_customer": "No",
+      "no_used": "1",
+      "total_discount": "$0.00",
+      "status": "Active"
+   },
+   {
+      "id": "15",
+      "promo_code": "TestPromo56",
+      "discount": "10%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending",
+      "apply_once_per_customer": "Yes",
+      "no_used": "2",
+      "total_discount": "$8.12",
+      "status": "Active"
+   },
+   {
+      "id": "16",
+      "promo_code": "testing",
+      "discount": "5%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending, Approved, Not Approved",
+      "apply_once_per_customer": "No",
+      "no_used": "0",
+      "total_discount": "$0.00",
+      "status": "Active"
+   },
+   {
+      "id": "17",
+      "promo_code": "TestPromoCodeNew13",
+      "discount": "20%",
+      "apply_discount_to": "Apply to lowest value invoice",
+      "apply_to_customers": "Pending",
+      "apply_once_per_customer": "Yes",
+      "no_used": "1"
+   }
+]

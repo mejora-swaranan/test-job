@@ -1,0 +1,33 @@
+@import "./../../../assets/scss/var";
+@import "./../../../assets/scss/media-query";
+@import "./../../../assets/scss/font-mixins";
+/* ============================================================== */
+
+.table-wrapper{
+    thead{
+        tr{
+            background-color: $primary-color;
+            th{
+                color: $white-color;
+                border-bottom: none;
+                background-color: transparent;
+                @include primary-medium-font;
+                font-weight: 500;
+            }
+        }
+    }
+    td,th{
+        vertical-align: middle;
+        @include font-14;
+        padding: 8px 10px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $black-color;
+    }
+    .messagebox{
+        padding: 5px 10px;
+        height: 31px;
+        border: 1px solid $black-color;
+        line-height: 1.2;
+    }
+}

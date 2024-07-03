@@ -1,0 +1,104 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.usermangement-table-wrap{
+    thead{
+        tr{
+            th{
+                &:nth-last-child(1){
+                    text-align: right;
+                }
+            }
+        }
+    }
+    tr{
+        &:nth-child(even){
+            background-color: transparent !important;
+        }
+    }
+    .parentrow{
+        border-bottom: 1px solid $table-border-color;
+        &:hover{
+            background-color: transparent !important;
+        }
+        th,td{
+            vertical-align: baseline;
+            span.expandbtn{
+                display: block;
+                line-height: 0;
+            }
+            &:nth-child(1){
+                width: 30px;
+                display: none;
+                @include respond-below(md){
+                    display: table-cell;
+                }
+            }
+            &:nth-child(9){
+                @include respond-below(md){
+                    display: none;
+                }
+            }
+            &:nth-child(8){
+                @include respond-below(sm){
+                    display: none;
+                }
+            }
+            &:nth-child(7){
+                white-space: pre-line;
+                @include respond-below(xsm){
+                    display: none;
+                }
+            }
+            &:nth-child(6){
+                @include respond-below(xxs){
+                    display: none;
+                }
+            }
+            &:nth-child(5){
+                @include respond-below(xxxxms){
+                    display: none;
+                }
+            }
+        }
+        &:nth-child(even){
+            background-color: transparent !important;
+        }
+        &.selected {
+            background-color: #B0BED9 !important;
+        }       
+    }
+    .childrow{
+        td{
+            span{
+                display: none;
+                &:nth-child(7){
+                    @include respond-below(md){
+                        display: block;
+                    }
+                }
+                &:nth-child(6){
+                    @include respond-below(sm){
+                        display: block;
+                    }
+                }
+                &:nth-child(5){
+                    @include respond-below(xsm){
+                        display: block;
+                    }
+                }
+                &:nth-child(4){
+                    @include respond-below(xxs){
+                        display: block;
+                    }
+                }
+                &:nth-child(3){
+                    @include respond-below(xxxxms){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

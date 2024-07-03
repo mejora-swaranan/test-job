@@ -1,0 +1,72 @@
+@import "./../../assets/scss/var";
+@import "./../../assets/scss/media-query";
+@import "./../../assets/scss/font-mixins";
+
+.sale-leade-form {
+   .input-group {
+      select,
+      .basic-multi-select,
+      textarea {
+         width: 100%;
+         border: 1px solid $input-border-color;
+         height: 34px;
+         color: $text-color;
+         @include primary-font;
+         @include font-14;
+         &::placeholder {
+            color: $gray-light-color;
+         }
+         &#direct_commision,
+         &#referral_commision {
+            width: auto;
+            height: auto;
+         }
+      }
+      textarea {
+         min-height: 70px;
+      }
+      small {
+         font-size: 70%;
+      }
+
+      // input read only
+      input:read-only {
+         background-color: $input-bg-color !important;
+      }
+   }
+
+   .basic-multi-select {
+      border: none !important;
+      height: auto !important;
+      input {
+         height: auto !important ;
+      }
+   }
+   .select__control {
+      min-height: auto !important;
+   }
+   .select__value-container {
+      padding-block: 5px !important;
+   }
+   .select__multi-value {
+      margin-block: 0 !important;
+   }
+   .css-qbdosj-Input {
+      margin-block: 0 !important;
+   }
+}
+.monthly_report_table {
+   .month_table {
+      @include respond-below(sm) {
+         overflow-x: scroll;
+      }
+   }
+   th {
+      text-align: center;
+   }
+   tbody {
+      tr {
+         border-bottom: 1px solid #dee2e6;
+      }
+   }
+}

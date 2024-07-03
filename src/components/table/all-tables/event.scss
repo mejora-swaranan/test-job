@@ -1,0 +1,36 @@
+@import "./../../../assets/scss/var";
+@import "./../../../assets/scss/media-query";
+@import "./../../../assets/scss/font-mixins";
+/* ============================================================== */
+.event-table{
+    @include font-14;
+    margin-bottom: 0px;
+    tr{
+        td{
+            @include font-14;
+            strong{
+                @include primary-font;
+                font-weight: 600;
+            }
+            .show-desc-content{
+                border: 0;
+                padding: 0;
+                box-shadow: 0 0 0 transparent;
+                color: $primary-color;
+                background: transparent;
+                font-size: 12px;
+                font-weight: 600;
+                float: right;
+                &:hover{
+                    color: $secondary-color;                 
+                }
+                &:focus{
+                    outline: 0;                    
+                }
+            }
+            .description-details {
+                clear: both;
+            }
+        }
+    }
+}

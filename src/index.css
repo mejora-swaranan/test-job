@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*font-family:'Conv_HVD Fonts - PlutoCondBlack',Sans-Serif;*/
+@font-face {
+  font-family: 'Conv_HVD_Fonts_PlutoCondBlack';
+  src: url('./assets/fonts/HVD Fonts - PlutoCondBlack.eot');
+  src: local('☺'), url('./assets/fonts/HVD Fonts - PlutoCondBlack.woff') format('woff'), url('./assets/fonts/HVD Fonts - PlutoCondBlack.ttf') format('truetype'), url('./assets/fonts/HVD Fonts - PlutoCondBlack.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*font-family:'Conv_HVD Fonts - PlutoCondRegular',Sans-Serif;*/
+@font-face {
+  font-family: 'Conv_HVD_Fonts_PlutoCondRegular';
+  src: url('./assets/fonts/HVD Fonts - PlutoCondRegular.eot');
+  src: local('☺'), url('./assets/fonts/HVD Fonts - PlutoCondRegular.woff') format('woff'), url('./assets/fonts/HVD Fonts - PlutoCondRegular.ttf') format('truetype'), url('./assets/fonts/HVD Fonts - PlutoCondRegular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*font-family:'Conv_HVD Fonts - PlutoMedium',Sans-Serif;*/
+@font-face {
+  font-family: 'Conv_HVD_Fonts_PlutoMedium';
+  src: url('./assets/fonts/HVD Fonts - PlutoMedium.eot');
+  src: local('☺'), url('./assets/fonts/HVD Fonts - PlutoMedium.woff') format('woff'), url('./assets/fonts/HVD Fonts - PlutoMedium.ttf') format('truetype'), url('./assets/fonts/HVD Fonts - PlutoMedium.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*font-family:'Conv_MinionPro-Regular',Sans-Serif;*/
+@font-face {
+  font-family: 'Conv_MinionPro-Regular';
+  src: url('./assets/fonts/MinionPro-Regular.eot');
+  src: local('☺'), url('./assets/fonts/MinionPro-Regular.woff') format('woff'), url('./assets/fonts/MinionPro-Regular.ttf') format('truetype'), url('./assets/fonts/MinionPro-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*font-family:'Conv_Pluto Cond Bold',Sans-Serif;*/
+@font-face {
+  font-family: 'Conv_Pluto Cond Bold';
+  src: url('./assets/fonts/Pluto Cond Bold.eot');
+  src: local('☺'), url('./assets/fonts/Pluto Cond Bold.woff') format('woff'), url('./assets/fonts/Pluto Cond Bold.ttf') format('truetype'), url('./assets/fonts/Pluto Cond Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* gotham Font */
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('./assets/fonts/Gotham-Medium.eot');
+  src: local('☺'), url('./assets/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Gotham-Medium.ttf') format('truetype'),
+      url('./assets/fonts/Gotham-Medium.woff') format('woff'),
+      url('./assets/fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GothamBold';
+  src: url('./assets/fonts/Gotham-Bold.eot');
+  src: local('☺'), url('./assets/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Gotham-Bold.ttf') format('truetype'),
+      url('./assets/fonts/Gotham-Bold.woff') format('woff'),
+      url('./assets/fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GothamBook';
+  src: url('./assets/fonts/Gotham-Book.eot');
+  src: local('☺'), url('./assets/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Gotham-Book.ttf') format('truetype'),
+      url('./assets/fonts/Gotham-Book.woff') format('woff'),
+      url('./assets/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+code {
+  font-family: 'GothamBook' !important;
+}

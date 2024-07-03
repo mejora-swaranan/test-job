@@ -1,0 +1,47 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.feedatatable{
+    .parentrow{
+        th,td{
+            &:nth-child(5){
+                @include respond-below(lg){
+                    display: none;
+                }
+            }
+            &:nth-child(4){
+                @include respond-below(mmd){
+                    display: none;
+                }
+            }
+            &:nth-child(3){
+                @include respond-below(xxxxxs){
+                    display: none;
+                }
+            }
+        }
+    }
+    .childrow{
+        td{
+            span{
+                display: none;
+                &:nth-child(4){
+                    @include respond-below(lg){
+                        display: block;
+                    }
+                }
+                &:nth-child(3){
+                    @include respond-below(mmd){
+                        display: block;
+                    }
+                }
+                &:nth-child(2){
+                    @include respond-below(xxxxxs){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

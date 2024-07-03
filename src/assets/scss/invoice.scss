@@ -1,0 +1,35 @@
+@import "var";
+@import "media-query";
+@import "font-mixins";
+/* ============================================================== */
+.invoice-page-wrap{
+    @include primary-font;
+    .invoice-page-tab-wrap{
+        .invoice-nav{
+            border-bottom: 1px solid $dashborad-tab-border-color;
+            li{
+                position: relative;
+                bottom: -1px;
+                a{
+                    font-size: 13px;
+                    text-decoration: none;
+                    display: inline-block;
+                    border-radius: 3px 3px 0 0;
+                    margin: 0 0px 0 0px;
+                    padding: 0.3em 1.5em;
+                    cursor: pointer;
+                    position: relative;
+                    text-transform: uppercase;
+                    color: $primary-color;
+                    background-color: $dashborad-tab-color;
+                    border: 1px solid $dashborad-tab-border-color;
+                    border-bottom: 1px solid $dashborad-tab-color;
+                    font-weight: 700;
+                }
+            }
+        }
+        .tab-content{
+            padding-top: 20px;
+        }
+    }
+}

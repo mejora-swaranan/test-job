@@ -1,0 +1,16 @@
+@import "./../../../assets/scss/var";
+@import "./../../../assets/scss/media-query";
+@import "./../../../assets/scss/font-mixins";
+/* ============================================================== */
+.testimonial-table{
+    tbody{
+        tr{
+            td{
+                &:nth-child(1){
+                    font-weight: 700;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

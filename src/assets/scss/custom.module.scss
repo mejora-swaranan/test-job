@@ -1,0 +1,613 @@
+@import "var";
+@import "media-query";
+@import "font-mixins";
+/* ============================================================== */
+.titleArea{
+    background: $title-bg-color;
+    padding: 13px 19px 10px;
+    margin: 0 0 15px 0;
+    @include respond-below(xsm){
+        padding: 13px 15px 10px;
+    }
+    @include respond-below(xxs){
+        padding: 10px 10px 10px;
+    }
+    h1,h2,h3,h4,h5,h6{
+        @include font-16;
+        color: $white-color;
+        text-transform: uppercase;
+        @include primary-medium-font;
+        font-weight: 400;
+    }
+}
+
+.labelTitle{
+    padding: 0 0 3px 0;
+    margin-bottom: 4px;
+    h1,h2,h3,h4,h5,h6{
+        @include font-14;
+        color: $primary-color;
+        @include primary-medium-font;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+.commentAddbtn{
+    @include font-14;
+    color: $primary-color;
+    @include primary-medium-font;
+    font-weight: 500;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.selectdropdown{
+    border: 1px solid $primary-color;
+    @include primary-font;
+    height: 31px;
+    width: 100%;
+    @include font-14;
+    color: $black-color;
+}
+.btngroupwrap{
+    li{
+        list-style: none;
+        // padding: 0 2px;
+        &:last-child{
+            padding-right: 0;
+        }
+        &:first-child{
+            padding-left: 0;
+        }
+       span, button{
+            margin-left: 4px;
+       }
+    }
+}
+.btnWithmargin{
+    position: relative;
+    top: -2px;
+    max-width: 76px;
+    width: 100%;
+    flex-wrap: wrap;
+    li{
+        padding: 0 !important;
+    }
+}
+.btnPrimary{
+    height: 31px;
+    width: 31px;
+    background-color: $primary-color;
+    display: block;
+    @include font-16;
+    @include primary-font;
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    transition: all 0.3s;
+    &:hover{
+        background-color: $sidebar-menu-color;
+    }
+    input{
+        height: 31px;
+        width: 31px !important;
+        background-color: $primary-color;
+        border: 0;
+        @include font-16;
+        @include primary-font;
+        color: $white-color;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $sidebar-menu-color;
+        }
+    }
+    svg{
+        filter: brightness(0) invert(1);
+    }
+}
+
+.textfield{
+    border: 1px solid $primary-color;
+    padding: 5px 7px;
+    background: transparent;
+    @include primary-font;
+    @include font-14;
+    height: 31px;
+    font-weight: 500;
+    color: $sidebar-menu-color;
+    width: 100%;
+    &::placeholder{
+        color: $title-bg-color;
+        @include primary-font;
+    }
+}
+
+.editCommentwrap{
+    border-bottom: 1px solid $table-border-color;
+    border-top: 1px solid $table-border-color;
+    background-color: $white-light-shade;
+    padding: 0.75rem;
+}
+.commentArea{
+    textarea{
+        width: 100%;
+        height: 110px;
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        padding: 5px 7px;
+        @include font-14;
+        @include primary-font;
+    }
+}
+.commentSubmit{
+    width: 100%;
+    button{
+        width: 100%;
+        &:hover{
+            background-color: $sidebar-menu-color;
+        }
+    }
+}
+.commentUpdate{
+    border-bottom: 1px solid $table-border-color;
+}
+
+.showCommentArea{
+    display: block;
+}
+.hideCommentArea{
+    display: none;
+}
+
+
+.contentTopheadTitle{
+    h2,h3,h4,h5,h6{
+        @include font-18;
+        @include primary-bold-font;
+        color: $black-color;
+    }
+    h1{
+        @include font-30;
+        color: $primary-color;
+        @include primary-bold-font;
+        font-weight: 900;
+        margin-top: 10px;
+    }
+}
+
+// for status bar
+.selectStatusLabel {
+    margin: 5px;
+    color: $sidebar-menu-color;
+    @include font-16;
+    font-weight: 700;
+}
+.selectShowStatus {
+    display: inline-block;
+    @include font-14;
+    @include primary-font;
+    font-weight: 600;
+    color: $select-color;
+    padding: 5px 2.1em 5px 7px;
+    border: 1px solid $select-color;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat, repeat;
+    background-position: right 0em top 50%, 0 0;
+    align-items: center;
+    background-image: url("../../assets/images/arr.jpg");
+    height: 31px;
+    min-width: 215px;
+    max-width: 250px;
+    @include respond-below(md){
+        min-width: 130px;
+        max-width: 215px;
+    }
+    @include respond-below(ssmm){
+        max-width: 210px;
+    }
+    @include respond-below(sm){
+        max-width: 215px;
+    }
+}
+.selectAccountStatus{
+    margin-left: 18px;
+    @include respond-below(sm){
+        margin-left: 0px;
+    }
+}
+.searchBox {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid $search-border-color !important;
+    height: calc(1.5em + .75rem + -4px);
+    padding: 1px .75rem;
+    @include primary-font;
+    font-weight: 600;
+}
+
+// for top action btn
+.actioniconBtn{
+    li{
+        list-style: none;
+        margin-left: 5px;
+        padding: 2px 0;
+        &:first-child{
+            margin-left: 0;
+        }
+        button{
+            width: 31px;
+            height: 31px;
+            display: flex;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            border: 0px;
+            border-radius: 3px;
+            &:focus{
+                outline: 0;
+                box-shadow: 0 0 0 transparent !important;
+            }
+        }
+    }
+}
+
+// for top action btn
+.topActioniconBtn{
+    margin-left: 10px;
+    li{
+        list-style: none;
+        margin-left: 5px;
+        padding: 2px 0;
+        &:first-child{
+            margin-left: 0;
+        }
+        button{
+            width: fit-content;
+            height: 31px;
+            display: flex;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            border: 0px;
+            border-radius: 3px;
+            @include font-14;
+            font-weight: 600;
+            cursor: pointer;
+            &:focus{
+                outline: 0;
+                box-shadow: 0 0 0 transparent !important;
+            }
+        }
+    }
+}
+
+.filterDate{
+    input{
+        border-radius: 3px !important;
+    }
+}
+// for section title
+.blogTitle{
+    h1,h2,h3,h4,h5,h6{
+        @include font-18;
+        @include primary-bold-font;
+        color: $secondary-color;
+    }
+}
+.customInputWrap{
+    label{
+        @include primary-font;
+        font-weight: 600;
+        color: $secondary-color;
+    }
+    input{
+        border: 1px solid $table-border-color;
+        width: 100%;
+        height: 31px;
+        @include primary-font;
+        border-radius: 0;
+        @include font-14;
+        padding: 5px 7px;
+        &::placeholder{
+            color: $table-border-color;
+        }
+    }
+    input[type=submit]{
+        background-color: $primary-color;
+        color: $white-color;
+        border: 1px solid $primary-color;
+        max-width: 110px;
+        border-radius: 5px;
+        transition: all 0.3s;
+        &:hover{
+            background-color: $secondary-color;
+        }
+    }
+}
+
+// for customer details
+.detailsTopheadListTitle{
+    h1,h2,h3,h4,h5,h6{
+        color: $secondary-color;
+        @include primary-font;
+        font-weight: 600;
+        @include font-15;
+    }
+    a{
+        color: $default-link-color;
+        font-weight: 600;
+        @include font-15;
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+}
+
+.inputWithButton{
+    select,input{
+        width: calc(100% - 31px);
+        padding: 5px 7px;
+        height: 31px;
+    }
+}
+.inputWidthBox{
+    border: 1px solid $primary-color;
+    width: calc(100% - 31px) !important;
+}
+.textWithIcon{
+    >div{
+        width: calc(100% - 31px);
+    }
+}
+.linkAllAccount{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    li{
+        padding: 5px 0;
+        list-style: none;
+    }
+}
+.showDetails{
+    background-color: transparent;
+    border: 0px;
+    box-shadow: 0 0 0 transparent;
+    @include font-14;
+    color: $primary-color;
+}
+.syncBtn{
+    background-color: transparent;
+    border: 0px;
+    box-shadow: 0 0 0 transparent;
+    @include font-14;
+    color: $primary-color;
+    &:hover{
+        color: $secondary-color;
+    }
+}
+.bankAccountsAlert{
+    li{
+        list-style: none;
+        padding: 12px 20px;
+    }
+}
+
+
+
+
+// for tab btn header
+.tabContainerCustom{
+    >ul{
+        border-bottom: 1px solid $dashborad-tab-border-color;
+        >li{
+            position: relative;
+            // bottom: -1px;
+            >a,>button{
+                font-size: 13px;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 5px 5px 0 0 !important;
+                margin: 0 0px 0 0px;
+                padding: 0.3em 1.5em;
+                cursor: pointer;
+                position: relative;
+                text-transform: uppercase;
+                color: $secondary-color;
+                background-color: transparent;
+                border: 1px solid transparent !important;
+                border-bottom: 1px solid transparent !important;    
+                box-shadow: 0 0 0 transparent;            
+                &:hover, &:focus{
+                    background: transparent;
+                    border: 1px solid transparent !important;
+                    border-bottom: 1px solid transparent !important; 
+                    color: $secondary-color;
+                    box-shadow: 0 0 0 transparent;            
+                }
+            }
+        }
+    }
+}
+.tabContainerTrust{
+    >ul{
+        >li{
+            border-radius: 5px 5px 0 0 !important;
+            >a,>button{
+                border-radius: 5px 5px 0 0 !important;
+            }
+        }
+    }
+}
+// for tableForall css
+.tableForall{
+    tr,td,th{
+        color: $secondary-color;
+        @include font-14;
+        @include primary-font;
+        padding: 5px 5px 6px 5px;
+        word-break: break-word;        
+    }
+    thead{
+        tr{
+            th{
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+.comment_box_wrap{
+    textarea{
+        width: 100%;
+        border: 1px solid $primary-color;
+    }
+}
+
+.contentBox2X{
+    div{
+        width: 100%;
+    }
+    span, button{
+        margin-left: 4px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}
+
+.userLabelSmall{
+    font-size: 12px;
+    color: $primary-color;
+    display: block;
+}
+
+.tableinpuTWrap{
+    width: 100%;
+    input,select,textarea{
+        border: 1px solid $primary-color;
+        width: 100%;
+    }
+    textarea{
+        height: 31px;
+    }
+}
+
+
+// for paginatio controls
+.pagiNationBar{
+    @include font-14;
+    button{
+        border: 0;
+        background-color: transparent;
+        padding: 6px 10px 6px;
+        color: $select-color;
+        @include font-14;
+        cursor: pointer;
+        &:disabled{
+            color: $gray-shade-light-color;
+            &:hover{
+                color: $gray-shade-light-color !important;
+            }
+        }
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    span{
+        color: $select-color;
+    }
+    input,select{
+        border: 1px solid $select-color;
+        height: 26px;
+        color: $select-color;
+        padding: 2px 7px;
+        -webkit-appearance: none;
+        &::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        &::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+    select{
+        min-width: 80px;        
+    }
+}
+
+.searchOptionWrap{
+    li{
+        list-style: none;
+        margin-left: 4px;
+        padding: 2px 0;
+        a{
+            height: 31px;
+            padding: 4px 7px;
+            @include font-14;
+        }
+    }
+}
+
+.actionButtonList{
+    @include respond-below(xxs){
+        min-width: 60px;
+    }
+    li{
+        list-style: none;
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+        flex-wrap: wrap;
+        a,button{
+            margin: 1px;
+            &:hover{
+                color: $white-color !important;
+            }
+        }
+    }
+}
+
+.inputFilterBar{
+    input{
+        border: 1px solid $primary-color;
+        height: 31px;
+        @include font-14;
+    }
+}
+
+
+// for Monthly Commission Report
+.sectionBtnwRap{
+    min-width: 60px;
+    li{
+        list-style: none;
+        padding: 0 2px;
+        button{
+            height: 31px;
+            padding: 2px 12px !important;
+            @include font-14;
+        }
+    }
+}
+.monthSelectionWrap{
+    label{
+        margin-right: 5px;
+        font-weight: 600;
+        color: $text-color;
+        @include font-14;
+    }
+    select{
+        height: 31px;
+        border-radius: 0.375rem; 
+        @include font-14; 
+        cursor: pointer;      
+    }
+}

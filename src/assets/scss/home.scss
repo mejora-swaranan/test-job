@@ -1,0 +1,116 @@
+@import "var";
+@import "media-query";
+@import "font-mixins";
+/* ============================================================== */
+
+.blank-height{
+    padding-top: 81px;
+    @include respond-below(xxs) {
+        padding-top: 56px;
+    }
+}
+.home-main-section{
+    padding-top: 50px;
+    @include respond-below(xxs) {
+        padding-top: 30px;
+    }
+    .home-title{
+        h1{
+            font-family: $secondary-bold-font;
+            @include font-74;
+            color: $primary-color;
+            text-decoration: none;
+            line-height: 1;
+        }
+        .sub-title{
+            @include font-18;
+            color: $gray-color;
+            @include secondary-font;
+        }
+    } 
+}
+
+.invoice-info-msg {
+    font-size: 16px;
+    @include secondary-font;
+    color: $gray-color;
+    line-height: 1.42857;
+    p{
+        margin-bottom: 10px;
+    }
+    a{
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: 600;
+        &:hover{
+            color: $gray-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+.accounting-software{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    @include respond-below(xxs){
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    a{
+        display: inline-block;
+    }
+}
+.setup-section{
+    background-color: $green-color;
+    padding: 40px 20px;
+    color: $white-color;
+    @include secondary-font;
+    h1,h2,h3,h4,h5,h6{
+        @include font-35;
+        color: $white-color;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        @include secondary-bold-font;
+    }
+    .contact-section{
+        li{
+            display: flex;
+            color: $white-color;
+            align-items: center;
+            @include secondary-bold-font;
+            @include font-18;
+            padding: 5px 0;
+            .icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                background-color: $white-color;
+                color: $green-color;    
+                border-radius: 50%;    
+                margin-right: 10px;        
+            }
+            a{
+                color: $white-color;
+                @include secondary-bold-font;
+                @include font-18;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.privecy-text-wrap{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    @include font-18;
+    color: $gray-color;
+    @include secondary-font;
+    @include respond-below(xxs){
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}

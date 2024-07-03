@@ -1,0 +1,294 @@
+{
+   "CustomerEmailTemplate": [
+      {
+         "template_title": "Customer: Invoice Funded",
+         "created_at": "2019-09-03 19:24:31",
+         "updated_at": "2024-06-21 21:55:32"
+      },
+      {
+         "template_title": "ADMIN: New Invoice Submitted",
+         "created_at": "2019-09-04 12:11:07",
+         "updated_at": "2023-12-06 18:23:47"
+      },
+      {
+         "template_title": "ADMIN: New Customer Sign-up",
+         "created_at": "2019-09-04 12:40:18",
+         "updated_at": "2024-06-05 23:51:40"
+      },
+      {
+         "template_title": "Beneficial Owner: Send Application email",
+         "created_at": "2019-09-04 13:42:25",
+         "updated_at": "2024-06-01 01:36:52"
+      },
+      {
+         "template_title": "Customer: Direct Debit Notice",
+         "created_at": "2019-09-04 16:21:48",
+         "updated_at": "2022-11-03 21:39:18"
+      },
+      {
+         "template_title": "Customer: Send Application email",
+         "created_at": "2019-09-04 17:39:34",
+         "updated_at": "2024-05-17 01:37:24"
+      },
+      {
+         "template_title": "Customer: Link Xero/Upload Invoices",
+         "created_at": "2019-09-04 18:02:07",
+         "updated_at": "2022-11-03 21:38:35"
+      },
+      {
+         "template_title": "Customer: Email Confirmation",
+         "created_at": "2019-09-04 18:38:55",
+         "updated_at": "2024-05-13 10:23:57"
+      },
+      {
+         "template_title": "Customer: Password Reset",
+         "created_at": "2019-09-04 18:51:55",
+         "updated_at": "2024-06-24 23:41:38"
+      },
+      {
+         "template_title": "Customer: Email FT Agreement, Trust or Corp Guarantee",
+         "created_at": "2019-09-04 15:11:11",
+         "updated_at": "2024-05-17 01:37:18"
+      },
+      {
+         "template_title": "Customer: Upload Later - sends docs",
+         "created_at": "2019-09-04 15:11:11",
+         "updated_at": "2024-05-17 01:37:16"
+      },
+      {
+         "template_title": "MARKETING: Exisiting Customers",
+         "created_at": "2019-09-04 18:38:55",
+         "updated_at": "2023-12-01 21:48:59"
+      },
+      {
+         "template_title": "MARKETING: New Customers",
+         "created_at": "2019-09-04 18:38:55",
+         "updated_at": "2022-08-12 00:34:31"
+      },
+      {
+         "template_title": "Customer: Email Customer on Payments page",
+         "created_at": "2021-02-12 14:49:03",
+         "updated_at": "2022-11-03 21:36:23"
+      },
+      {
+         "template_title": "MARKETING: Refer a Friend Promo Code",
+         "created_at": "2019-09-04 18:38:55",
+         "updated_at": "2024-06-10 19:00:15"
+      },
+      {
+         "template_title": "Redeem Promo Code",
+         "created_at": "2019-09-04 18:38:55",
+         "updated_at": "2024-05-17 01:37:10"
+      },
+      {
+         "template_title": "Beneficial Owner: Beneficial AML Upload Later",
+         "created_at": "2021-05-24 06:33:50",
+         "updated_at": "2024-05-17 01:37:02"
+      },
+      {
+         "template_title": "One time password",
+         "created_at": "2019-09-10 16:49:49",
+         "updated_at": "2024-06-25 00:02:32"
+      },
+      {
+         "template_title": "Testimonial: Xero Review",
+         "created_at": "2019-09-10 16:49:49",
+         "updated_at": "2022-08-12 00:33:17"
+      },
+      {
+         "template_title": "Testimonial: Google Review",
+         "created_at": "2019-09-10 16:49:49",
+         "updated_at": "2022-08-12 00:33:13"
+      },
+      {
+         "template_title": "Testimonial: VloggiVideo Clip",
+         "created_at": "2019-09-10 16:49:49",
+         "updated_at": "2022-08-12 00:33:08"
+      },
+      {
+         "template_title": "MARKETING: Tell a Friend Promo Code",
+         "created_at": "2019-09-04 18:38:55",
+         "updated_at": "2022-08-12 00:33:04"
+      },
+      {
+         "template_title": "Customer: Biometric ID Verification",
+         "created_at": "2022-04-28 09:56:27",
+         "updated_at": "2024-06-10 22:51:42"
+      },
+      {
+         "template_title": "Customer: Upload supporting documents",
+         "created_at": "2022-04-28 09:56:27",
+         "updated_at": "2024-05-17 01:36:52"
+      },
+      {
+         "template_title": "Customer: Email Documents (Trust or Corp Guarantee)",
+         "created_at": "2022-11-24 18:34:00",
+         "updated_at": "2024-05-17 01:36:48"
+      },
+      {
+         "template_title": "Customer: Create & Link Accounts NZ/AU",
+         "created_at": "2022-11-25 16:12:09",
+         "updated_at": "2024-05-17 01:36:45"
+      },
+      {
+         "template_title": "CUSTOMER: Customer paid, test not repaid (Xero)",
+         "created_at": "2022-12-15 13:46:16",
+         "updated_at": "2024-05-17 01:36:41"
+      },
+      {
+         "template_title": "CUSTOMER: DD Payment Failure",
+         "created_at": "2023-06-19 17:07:25",
+         "updated_at": "2024-05-17 01:36:37"
+      },
+      {
+         "template_title": "Customer: Get Direct Debit Mandate",
+         "created_at": "2023-06-28 12:46:48",
+         "updated_at": "2024-05-17 01:36:33"
+      },
+      {
+         "template_title": "Customer: Get customer to name Other Owners",
+         "created_at": "2023-06-28 12:46:48",
+         "updated_at": "2024-05-17 01:36:29"
+      },
+      {
+         "template_title": "Customer: Email Signed Copy (Agreement or Guarantee)",
+         "created_at": "2023-08-04 04:55:23",
+         "updated_at": "2024-05-17 01:36:26"
+      },
+      {
+         "template_title": "Owner/Beneficial Owner: Send ID & Agreement/Guarantee email",
+         "created_at": "2023-09-12 09:46:21",
+         "updated_at": "2024-05-17 01:36:24"
+      },
+      {
+         "template_title": "Sales checklist: Send questions to client",
+         "created_at": "2023-11-01 02:58:13",
+         "updated_at": "2024-06-06 00:42:27"
+      },
+      {
+         "template_title": "Customer: BIRTHDAY100 discount code",
+         "created_at": "2024-06-18 06:53:43",
+         "updated_at": "2024-06-18 06:53:43"
+      }
+   ],
+   "ReferralEmailTemplate": [
+      {
+         "template_title": "REFFERAL Partner: Monthly Summary Report",
+         "created_at": "2019-09-04 17:07:25",
+         "updated_at": "2024-02-23 14:07:52"
+      },
+      {
+         "template_title": "Advisor: Referral Link",
+         "created_at": "2019-09-03 19:24:31",
+         "updated_at": "2022-02-18 10:38:16"
+      },
+      {
+         "template_title": "REFERRAL Person: When one of their customers invoices are funded",
+         "created_at": "2023-08-31 19:42:26",
+         "updated_at": "2024-02-22 09:30:22"
+      },
+      {
+         "template_title": "REFERRAL Person: Client credit available - On BUTTON PUSH",
+         "created_at": "2023-11-01 02:58:13",
+         "updated_at": "2024-02-20 15:40:59"
+      },
+      {
+         "template_title": "Referral Partner: A client they have referred has signed up",
+         "created_at": "2024-04-18 00:39:19",
+         "updated_at": "2024-04-18 00:39:19"
+      },
+      {
+         "template_title": "Referral Partner: A client they have referred has been lost. Reason ‘Incomplete Application’",
+         "created_at": "2024-04-18 00:39:19",
+         "updated_at": "2024-04-18 00:39:19"
+      },
+      {
+         "template_title": "Referral Partner: A client they have referred has been lost. Reason ‘Credit - EDM’ or 'Credit - Never'",
+         "created_at": "2024-04-18 00:39:19",
+         "updated_at": "2024-04-18 00:39:19"
+      },
+      {
+         "template_title": "Referral Partner: A client they have referred has been lost. Reason ‘No Trading History’",
+         "created_at": "2024-04-18 00:39:19",
+         "updated_at": "2024-04-18 00:39:19"
+      },
+      {
+         "template_title": "Referral Partner: A client they have referred has been lost. Reason ‘Client Requirements/Competitor’ or ‘Not Required Now’",
+         "created_at": "2024-04-18 00:39:19",
+         "updated_at": "2024-04-18 00:39:19"
+      },
+      {
+         "template_title": "Referral Partner: A client they have referred has been lost. Reason ‘Not Invoicing’",
+         "created_at": "2024-04-18 00:39:19",
+         "updated_at": "2024-04-18 00:39:19"
+      }
+   ],
+
+   "AdminEmailTemplate": [
+      {
+         "template_title": "ADMIN: New Invoice Submitted",
+         "created_at": "2019-09-04 12:11:07",
+         "updated_at": "2023-12-14 14:58:22"
+      },
+      {
+         "template_title": "ADMIN: New Customer Sign-up",
+         "created_at": "2019-09-04 12:40:18",
+         "updated_at": "2023-12-14 16:55:20"
+      },
+      {
+         "template_title": "ADMIN: Notification - Owner Completed Application",
+         "created_at": "2019-09-04 13:07:56",
+         "updated_at": "2023-12-14 15:03:15"
+      },
+      {
+         "template_title": "ADMIN: Error when Funding Invoices",
+         "created_at": "2019-09-04 17:07:25",
+         "updated_at": "2023-12-14 15:03:32"
+      },
+      {
+         "template_title": "ADMIN: PPSR Registration Renewed",
+         "created_at": "2019-09-04 18:14:26",
+         "updated_at": "2023-12-14 15:03:57"
+      },
+      {
+         "template_title": "ADMIN: OTP sent to admin email",
+         "created_at": "2019-09-10 16:49:49",
+         "updated_at": "2023-12-14 15:25:17"
+      },
+      {
+         "template_title": "ADMIN: Customer Xero Write-back failure",
+         "created_at": "2019-09-04 17:07:25",
+         "updated_at": "2024-03-05 14:38:55"
+      },
+      {
+         "template_title": "ADMIN: Customer paid, test not repaid (Xero)",
+         "created_at": "2019-09-04 17:07:25",
+         "updated_at": "2023-12-14 15:25:51"
+      },
+      {
+         "template_title": "ADMIN: Direct-debit failure",
+         "created_at": "2019-09-04 17:07:25",
+         "updated_at": "2023-12-14 15:28:54"
+      },
+      {
+         "template_title": "ADMIN: Customer Linked Xero, Not submitted invoice.",
+         "created_at": "2019-09-03 19:24:31",
+         "updated_at": "2023-12-14 16:55:06"
+      },
+      {
+         "template_title": "ADMIN: Credit Limit Review Request",
+         "created_at": "2023-08-31 18:35:01",
+         "updated_at": "2023-12-14 15:26:49"
+      },
+      {
+         "template_title": "Admin: Customer disconnected their Accounting Software",
+         "created_at": "2023-12-13 22:10:35",
+         "updated_at": "2024-03-12 16:12:51"
+      },
+      {
+         "template_title": "ADMIN: Xero test Account - Write-back failure",
+         "created_at": "2024-03-01 21:47:04",
+         "updated_at": "2024-03-05 14:38:16"
+      }
+   ]
+}

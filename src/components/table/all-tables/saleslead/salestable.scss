@@ -1,0 +1,135 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.sales-lead-icons {
+   li {
+      list-style: none;
+      align-items: center;
+      display: flex;
+      button {
+         border: 0;
+         @include font-14;
+         color: $primary-color;
+         margin: 0 2px;
+         background-color: transparent;
+         &:hover {
+            color: $text-color;
+         }
+      }
+   }
+}
+
+.salesleadtable {
+   .parentrow {
+      border-bottom: 1px solid $table-border-color !important;
+      th,
+      td {
+         &:nth-child(1) {
+            @include respond-above(xxl) {
+               display: none;
+            }
+         }
+         &:nth-child(9),
+         &:nth-child(8) {
+            @include respond-below(xxl) {
+               display: none;
+            }
+         }
+         &:nth-child(7) {
+            @include respond-below(lg) {
+               display: none;
+            }
+         }
+         &:nth-child(6) {
+            @include respond-below(md) {
+               display: none;
+            }
+         }
+         &:nth-child(5) {
+            @include respond-below(smmm) {
+               display: none;
+            }
+         }
+         &:nth-child(4) {
+            @include respond-below(xxs) {
+               display: none;
+            }
+         }
+         &:nth-child(3) {
+            @include respond-below(xxxs) {
+               display: none;
+            }
+         }
+      }
+   }
+   .childrow {
+      td {
+         span {
+            display: none;
+            &:nth-child(8),
+            &:nth-child(7) {
+               @include respond-below(xxl) {
+                  display: block;
+               }
+            }
+            &:nth-child(6) {
+               @include respond-below(lg) {
+                  display: block;
+               }
+            }
+            &:nth-child(5) {
+               @include respond-below(md) {
+                  display: block;
+               }
+            }
+            &:nth-child(4) {
+               @include respond-below(smmm) {
+                  display: block;
+               }
+            }
+            &:nth-child(3) {
+               @include respond-below(xxs) {
+                  display: block;
+               }
+            }
+            &:nth-child(2) {
+               @include respond-below(xxxs) {
+                  display: block;
+               }
+            }
+         }
+      }
+   }
+
+   &.customer_idverification {
+      .parentrow {
+         th,
+         td {
+            &:first-child {
+               @include respond-above(md) {
+                  display: none;
+               }
+            }
+         }
+      }
+   }
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+   background-color: $primary-color !important;
+   box-shadow: 0 0 0 !important;
+   border: 1px solid $primary-color;
+}
+
+.box-title {
+   color: $gray-color;
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      @include font-20;
+   }
+}

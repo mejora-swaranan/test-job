@@ -1,0 +1,34 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+
+.rolemodal-table{
+    .parentrow{
+        border-bottom: 1px solid $table-border-color !important;
+        th,td{
+            &:nth-child(1){
+                @include respond-above(xxxxxs){
+                    display: none;
+                }
+            }
+            &:nth-child(4){
+                @include respond-below(xxxxxs){
+                    display: none;
+                }
+            }
+        }
+    }
+    .childrow{
+        td{
+            span{
+                display: none;
+                &:nth-child(3){
+                    @include respond-below(xxxxxs){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

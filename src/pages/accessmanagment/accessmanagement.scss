@@ -1,0 +1,27 @@
+@import "./../../assets/scss/var";
+@import "./../../assets/scss/media-query";
+@import "./../../assets/scss/font-mixins";
+
+.Acces_mngmnt {
+   .view_user {
+      display: inline-block;
+      .avatar-img{
+         width: 80px;
+         height: 80px;
+         img{
+            min-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+         }
+      }
+      strong {
+         padding: 5px 10px;
+         color: $white-color;
+         background: $border-color;
+         display: inline-block;
+         @include font-12;
+      }
+   }
+}
+

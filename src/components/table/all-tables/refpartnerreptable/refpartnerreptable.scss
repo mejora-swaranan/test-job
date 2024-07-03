@@ -1,0 +1,56 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.monthly-report-table{
+    thead{
+        tr{
+            &:nth-child(1){
+                th{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    tr{
+        &:nth-child(even){
+            background-color: transparent !important;
+        }
+        td,th{
+            border: 1px solid $gray-shade-light-color !important;
+        }
+    }
+    .parentrow{
+        border-bottom: 1px solid $table-border-color;
+        th,td{
+            span.expandbtn{
+                display: block;
+                line-height: 0;
+            }
+        }
+        td{            
+            &:nth-child(1){
+                a{
+                    font-weight: 600;
+                    color: $table-link-color;
+                    &:hover{
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+        &:nth-child(even){
+            background-color: transparent !important;
+        }
+        &:hover{
+            background-color: $tr-hover-color !important;
+        }        
+    }
+    .childrow{
+        td{
+            span{
+                display: none;
+            }
+        }
+    }
+}

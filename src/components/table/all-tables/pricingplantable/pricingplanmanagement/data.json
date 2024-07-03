@@ -1,0 +1,100 @@
+{
+   "StandardPricingPlan": [
+      {
+         "pricingname": "Standard",
+         "standard_pricing_flat": "4",
+         "standard_pricing_pa": "15",
+         "overdue_flat": "1",
+         "overdue_pa": "15",
+         "trigger_for_overdue": "Unrecoverable, In Default, Overdue"
+      },
+      {
+         "pricingname": "Trades Construction Pricing Plan (OLD)",
+         "standard_pricing_flat": "5",
+         "standard_pricing_pa": "15",
+         "overdue_flat": "1",
+         "overdue_pa": "15",
+         "trigger_for_overdue": "Unrecoverable, In Default, Overdue"
+      },
+      {
+         "pricingname": "New ss plan",
+         "standard_pricing_flat": "4",
+         "standard_pricing_pa": "15",
+         "overdue_flat": "4",
+         "overdue_pa": "15",
+         "trigger_for_overdue": "Pending, Funded, In Default, Overdue"
+      },
+      {
+         "pricingname": "Test",
+         "standard_pricing_flat": "2",
+         "standard_pricing_pa": "5",
+         "overdue_flat": "3",
+         "overdue_pa": "4",
+         "trigger_for_overdue": "Pending, Approved, Outstanding, Funded"
+      },
+      {
+         "pricingname": "Anchor",
+         "standard_pricing_flat": "4",
+         "standard_pricing_pa": "35",
+         "overdue_flat": "1",
+         "overdue_pa": "15",
+         "trigger_for_overdue": "Unrecoverable, In Default, Overdue"
+      },
+      {
+         "pricingname": "New Trades Pricing",
+         "standard_pricing_flat": "6",
+         "standard_pricing_pa": "15",
+         "overdue_flat": "1",
+         "overdue_pa": "1",
+         "trigger_for_overdue": "Unrecoverable, In Default, Overdue"
+      },
+      {
+         "pricingname": "Manual Invoice Upload Pricing Plan",
+         "standard_pricing_flat": "5",
+         "standard_pricing_pa": "15",
+         "overdue_flat": "1",
+         "overdue_pa": "15",
+         "trigger_for_overdue": "Unrecoverable, In Default, Overdue"
+      },
+      {
+         "pricingname": "5th (0-10%)",
+         "standard_pricing_flat": "66",
+         "standard_pricing_pa": "206",
+         "overdue_flat": "1.56",
+         "overdue_pa": "156",
+         "trigger_for_overdue": "Unrecoverable, In Default, Overdue"
+      }
+   ],
+   "RiskbasedVariablePricingPlan": [
+      {
+         "pricingname": "Test4 2nd",
+         "standard_pricing_flat": "1",
+         "standard_pricing_pa": "5",
+         "overdue_flat": "2",
+         "overdue_pa": "6",
+         "trigger_for_overdue": "Unrecoverable, In Default, Overdue",
+         "Maxlimitofrisk": "0.89000000",
+         "Minlimitofrisk": "0.00000000"
+      },
+      {
+         "pricingname": "Tes4 1st",
+         "standard_pricing_flat": "4",
+         "standard_pricing_pa": "15",
+         "overdue_flat": "3",
+         "overdue_pa": "12",
+         "trigger_for_overdue": "Unrecoverable, In Default, Overdue",
+         "Maxlimitofrisk": "0.90000000",
+         "Minlimitofrisk": "0.89000001"
+      },
+      {
+         "pricingname": "Test 4 3rd",
+         "standard_pricing_flat": "4",
+         "standard_pricing_pa": "12",
+         "overdue_flat": "4",
+         "overdue_pa": "15",
+         "trigger_for_overdue": "Unrecoverable, In Default, Overdue",
+         "Maxlimitofrisk": "1.00000000",
+         "Minlimitofrisk": "0.90000001"
+      }
+   ]
+}

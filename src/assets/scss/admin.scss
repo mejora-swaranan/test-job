@@ -1,0 +1,325 @@
+@import "var";
+@import "media-query";
+@import "font-mixins";
+/* ============================================================== */
+.main-wrap{
+    padding: 0;
+    display: flex;    
+    .bars{
+        display: flex;
+        font-size: 25px;
+        position: fixed;
+        top: 20px;
+        left: 13%;
+        transition: all 0.5s;
+        z-index: 11;
+        @include respond-below(md){
+            left: 14%;
+        }
+        @include respond-below(xsm){
+            left: 15px !important;
+            top: 15px;
+        }
+        button{
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: #dce7f5 !important;
+            padding: 0;
+            @include respond-below(lg){
+                width: 34px;
+                height: 34px;
+            }
+            @include respond-below(md){
+                width: 32px;
+                height: 32px;
+            }
+            svg{
+                font-size: 22px;
+                color: $sidebar-menu-color;
+                opacity: 0.65;
+                @include respond-below(lg){
+                    font-size: 20px;
+                }
+                @include respond-below(md){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .sidebar{
+        background: $sidebar-color;
+        height: 100vh;
+        max-width: 16%;
+        width: 100%;
+        transition: all 0.5s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 9;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding: 0 15px 50px;
+        scrollbar-color: $primary-color $sidebar-color;
+        scrollbar-width: thin;
+        @include respond-below(md){
+            max-width: 17%;
+        }
+        @include respond-below(xsm){
+            max-width: 250px;
+            transform: translateX(-100%);
+        }
+        &.active-sidebar{
+            max-width: 85px;
+            @include respond-below(xsm){
+                max-width: 250px;
+                transform: translateX(0%);
+            }
+        }
+        .top_section{
+            display: flex;
+            align-items:center;
+            padding: 20px 0;
+            justify-content: center;
+            .logo{
+                div{
+                    @include respond-below(xsm){
+                        display: block !important;
+                    }
+                }
+                img{
+                    max-width: 180px;
+                    width: 100%;
+                    @include respond-below(lg){
+                        max-width: 150px;
+                    }
+                    @include respond-below(md){
+                        max-width: 130px;
+                    }
+                    @include respond-below(sm){
+                        max-width: 110px;
+                    }
+                    @include respond-below(xsm){
+                        max-width: 100px;
+                    }
+                }
+                .logo-icon{
+                    @include respond-below(xsm){
+                        display: none !important;
+                    }
+                    img{
+                        height: 40px;
+                        @include respond-below(lg){
+                            height: 33px;
+                        }
+                        @include respond-below(sm){
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .profile-icon-wrap{
+            padding-top: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #383838;
+            font-size: 12px;
+            @include primary-font;
+            padding-bottom: 20px;
+            font-weight: 600; 
+            @include respond-below(xsm){
+                font-size: 9px;  
+                padding-top: 30px; 
+            }           
+            .profile-icon{
+                position: relative;
+                width: 60px;
+                margin: 0 auto 10px;
+                border-radius: 50%;
+                @include respond-below(sm){
+                    width: 35px;
+                }
+                @include respond-below(xsm){
+                    width: 35px !important;
+                }
+                span{
+                    position: absolute;
+                    color: #00c329;
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 50px;
+                    position: absolute;
+                    z-index: 2;
+                    top: 5px;
+                    right: -2px;
+                    @include respond-below(sm){
+                        width: 10px !important;
+                        height: 10px !important;
+                    }
+                    svg{
+                        font-size: 13px;
+                        @include respond-below(sm){
+                            font-size: 10px !important;
+                        }
+                    }
+                }
+            }
+            &.active-sidebar{   
+                font-size: 9px;     
+                .profile-icon{
+                    width: 45px;
+                    span{
+                        width: 10px;
+                        height: 10px;
+                        svg{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar-menu{
+            li{
+                color: $sidebar-menu-color;
+                font-size: 14px;
+                padding: 11px 0px;
+                width: 100%;
+                @include primary-font;
+                font-weight: 700;
+                list-style: none;
+                @include respond-below(sm){
+                    font-size: 12px;
+                }
+                a{
+                    color: $sidebar-menu-color;
+                    @include primary-font;
+                    font-weight: 700;
+                    position: relative;
+                    padding-left: 10px;
+                    @include respond-below(sm){
+                        padding-left: 0px;
+                    }
+                    .menu-item{
+                        align-items: center;
+                        img{
+                            max-height: 20px;
+                            @include respond-below(xsm){
+                                max-width: 15px;
+                                max-height: 15px;
+                            }
+                        }
+                        svg {
+                            font-size: 22px;
+                            color: $primary-color;
+                        }
+                    }
+                    .dropdown-icon{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        svg{
+                            font-size: 16px;
+                            color: $sidebar-menu-color;
+                            transition: all 0.3s;
+                        }
+                    }
+                    &:hover{
+                        color: $primary-color;
+                        .dropdown-icon{
+                            svg{
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+                .sub-menu{
+                    margin-top: 15px;
+                    padding-left: 27px;
+                    @include respond-below(xxs){
+                        padding-left: 20px;
+                    }
+                }
+               
+            }
+            >li{
+                &:first-child{
+                    border-bottom: 1px solid $underline-color;
+                    text-transform: uppercase;
+                    @include primary-medium-font;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    max-width: fit-content;
+                    padding-bottom: 0;
+                    margin-bottom: 10px;
+                    font-size: 13px;
+                    a{
+                        margin-left: 0;
+                        padding-left: 0;
+                        @include primary-medium-font;
+                        font-weight: 600;
+                        span{
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+            &.active-sidebar{
+                li{
+                    a{
+                        .menu-item{
+                            span{
+                                display: none;
+                                @include respond-below(xsm){
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .sub-menu{
+                        padding-left: 10px;
+                        li{
+                            a{
+                                span{
+                                    display: none;
+                                    @include respond-below(xsm){
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content-outer-wrapper{
+        width: 86%;
+        padding: 20px 20px 0;
+        padding-left: 25px;
+        margin-left: 16%;
+        transition: all 0.5s;
+        min-height: 85vh;
+        &.active-sidebar{
+            width: 100%;
+            margin-left: 86px;
+            padding-left: 40px;
+            @include respond-below(xsm){
+                margin-left: 0;
+                padding-left: 0px;
+            }
+        }
+        @include respond-below(xsm){
+            width: 100%;
+            padding: 15px;
+            padding-left: 15px;
+            padding-top: 80px;
+            margin-left: 0;
+        }
+    }
+}
+.icon, .link_text{
+    font-size: 20px;
+}

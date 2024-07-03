@@ -1,0 +1,84 @@
+@import "./../../../../assets/scss/var";
+@import "./../../../../assets/scss/media-query";
+@import "./../../../../assets/scss/font-mixins";
+/* ============================================================== */
+.businesstable{
+    .parentrow{
+        th,td{
+            &:nth-child(1){
+                @include respond-above(xxs){
+                    display: none;
+                }
+            }
+            &:nth-child(3){
+                @include respond-below(xxs){
+                    display: none;
+                }
+            }
+            &:nth-child(2){
+                @include respond-below(xxxxs){
+                    display: none;
+                }
+            }
+        }
+        textarea{
+            height: 31px;
+            border: 1px solid $primary-color;
+        }
+    }
+    .childrow{
+        td{
+            span{
+                display: none;
+                &:nth-child(2){
+                    @include respond-below(xxs){
+                        display: block;
+                    }
+                }
+                &:nth-child(1){
+                    @include respond-below(xxxxs){
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    &.table-fixed{
+        table-layout: fixed !important;
+        @include respond-below(xxs){
+            table-layout: unset !important;
+        }
+    }
+}
+
+.borderless_table{
+    tbody{
+        tr{
+            &.parentrow{
+                border-bottom: 0px !important;
+            }
+        }
+    }
+    &.table-fixed{
+        table-layout: fixed !important;
+        @include respond-below(xxs){
+            table-layout: unset !important;
+        }
+    }
+}
+
+
+.bgless_table{
+    tbody{
+        tr{
+            &:hover{
+                background-color: transparent !important;
+            }
+            &.parentrow{
+                &:nth-child(even){
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+}
